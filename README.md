@@ -1,78 +1,167 @@
-# [Nom del projecte]
+# Optigen
 
-> Plataforma web d'optimització d'equips pensada per ajudar els usuaris a millorar el rendiment dels seus sistemes de manera senzilla i accessible.
+> Plataforma web d'optimització d'equips pensada per ajudar els usuaris a analitzar i millorar el rendiment dels seus sistemes de manera senzilla i accessible.
 
 ## 1. Sobre el projecte
 
-**[Nom del projecte]** és una plataforma web **SaaS (Software as a Service)** dedicada a l'optimització d'equips.
+**Optigen** és una plataforma web **SaaS (Software as a Service)** dedicada a l'optimització d'equips.
 
 El servei està pensat per a usuaris que disposen de sistemes lents o que volen mantenir-los optimitzats, oferint una experiència senzilla directament des del navegador.
 
-La plataforma està allotjada al núvol i permet accedir a les seves funcionalitats sense necessitat d'instal·lar el programari de manera tradicional.
+La plataforma està allotjada al núvol i permet configurar diferents perfils d'optimització segons les necessitats de cada usuari.
 
-Les actualitzacions i millores del servei es gestionen de manera centralitzada, de manera que els usuaris sempre poden accedir a la versió disponible de la plataforma.
+L'usuari pot escollir entre configurar les opcions manualment o generar un script personalitzat a partir de la configuració seleccionada.
+
+Les actualitzacions i millores de la plataforma es gestionen de manera centralitzada.
 
 ## 2. Problema que solucionem
 
 Amb el temps, els equips poden acumular processos, fitxers temporals i configuracions que poden afectar negativament l'experiència d'ús.
 
-El nostre objectiu és simplificar les tasques d'optimització i oferir a l'usuari una eina accessible en qualsevol moment des de la web.
+Identificar aquests elements i saber quines accions realitzar pot requerir coneixements tècnics.
+
+El nostre objectiu és simplificar aquest procés mitjançant una plataforma que permet configurar una optimització i escollir com aplicar-la.
 
 ### El servei permet:
 
-1. Gestionar tasques relacionades amb l'optimització.
-2. Facilitar la neteja de fitxers temporals.
-3. Oferir configuracions predefinides.
-4. Crear perfils segons diferents necessitats.
-5. Automatitzar la selecció de configuracions.
-6. Centralitzar les opcions d'optimització en una única plataforma.
-7. Accedir al servei des de qualsevol navegador compatible.
+1. Configurar diferents opcions d'optimització.
+2. Analitzar possibles elements que poden afectar el rendiment.
+3. Facilitar la gestió de fitxers temporals.
+4. Oferir configuracions predefinides.
+5. Crear perfils segons diferents necessitats.
+6. Adaptar les configuracions segons el maquinari de l'usuari.
+7. Generar scripts personalitzats segons la configuració seleccionada.
+8. Permetre configurar les opcions manualment.
+9. Centralitzar les opcions d'optimització en una única plataforma web.
 
 ## 3. A qui va dirigit?
 
-El servei està orientat a **usuaris en general amb sistemes lents** o que busquen una manera més senzilla de gestionar les opcions d'optimització del seu equip.
+El servei està orientat a **usuaris en general amb sistemes lents** o que busquen una manera més senzilla d'analitzar i gestionar les opcions d'optimització del seu equip.
 
 No està pensat exclusivament per a usuaris tècnics.
 
-La plataforma busca oferir una experiència senzilla perquè l'usuari pugui seleccionar les opcions que necessita sense haver de configurar manualment cada aspecte.
+La plataforma busca que l'usuari pugui seleccionar què necessita i obtenir una configuració preparada sense haver de crear manualment els scripts o conèixer totes les opcions tècniques.
 
 ## 4. Com funciona?
 
-L'usuari només necessita accedir a la plataforma des del navegador.
+L'usuari accedeix a la plataforma des del navegador i selecciona el tipus d'optimització que necessita.
 
 ```text
 Usuari
    ↓
 Plataforma web
    ↓
-Selecció de perfil / optimització
+Selecció del perfil
    ↓
-Configuració de les opcions
+Configuració del maquinari
    ↓
-Aplicació / instruccions
+Configuració de l'optimització
+   ↓
+┌─────────────────────────────┐
+│                             │
+│  Configuració manual        │
+│           o                 │
+│  Generació d'script         │
+│                             │
+└─────────────────────────────┘
+   ↓
+Aplicació / execució
    ↓
 Resultat
 ```
 
-El servei està disponible **en qualsevol moment des de la nostra web**, sense necessitat de gestionar actualitzacions o instal·lacions tradicionals de la plataforma.
+El servei està disponible en qualsevol moment des de la web.
 
 ### 4.1. Perfils de configuració
 
-La plataforma ofereix diferents perfils adaptats a les necessitats de l'usuari.
+La plataforma ofereix diferents perfils d'optimització adaptats a les necessitats de cada usuari.
 
 Exemples:
 
-1. **Rendiment** — Prioritza les opcions relacionades amb el rendiment.
-2. **Equilibrat** — Configuració general per a un ús diari.
-3. **Neteja** — Orientat a la gestió de fitxers temporals i elements innecessaris.
+1. **Rendiment** — Configuració orientada a prioritzar el rendiment del sistema.
+2. **Equilibrat** — Configuració general pensada per a un ús diari.
+3. **Neteja** — Orientada a la gestió de fitxers temporals i elements innecessaris.
 4. **Gaming** — Configuració orientada a l'ús de videojocs.
-5. **Personalitzat** — Permet seleccionar les opcions manualment.
+5. **Personalitzat** — Permet seleccionar manualment les opcions que es volen analitzar o configurar.
 
-## 5. Experiència d'usuari
+### 4.2. Configuració del maquinari
 
-La plataforma està dissenyada perquè l'usuari pugui seleccionar el tipus d'optimització que necessita sense haver de conèixer en profunditat els aspectes tècnics del seu sistema.
+Per adaptar les recomanacions i configuracions al sistema de l'usuari, la plataforma permet seleccionar determinades característiques del maquinari.
 
-### 5.1. Exemple de flux
+#### Processador
+
+L'usuari podrà seleccionar el fabricant del seu processador:
+
+* **Intel**
+* **AMD**
+
+#### Targeta gràfica
+
+L'usuari també podrà seleccionar el fabricant de la seva targeta gràfica:
+
+* **NVIDIA**
+* **AMD**
+
+Aquestes opcions permetran adaptar les configuracions i els scripts generats segons el maquinari seleccionat.
+
+## 5. Modes d'optimització
+
+La plataforma ofereix dues maneres principals de treballar amb les configuracions.
+
+### 5.1. Configuració manual
+
+L'usuari pot seleccionar directament les opcions que vol utilitzar.
+
+Aquest mode permet tenir un major control sobre les diferents configuracions disponibles.
+
+El procés és:
+
+1. Seleccionar el perfil.
+2. Seleccionar el processador.
+3. Seleccionar la targeta gràfica.
+4. Seleccionar les opcions d'optimització.
+5. Revisar la configuració.
+6. Aplicar les opcions disponibles.
+
+### 5.2. Generació d'script
+
+L'usuari també pot optar per generar un script a partir de les opcions seleccionades.
+
+El procés és:
+
+1. Seleccionar el perfil.
+2. Seleccionar el processador.
+3. Seleccionar la targeta gràfica.
+4. Configurar les opcions d'optimització.
+5. Generar l'script.
+6. Revisar les accions que realitzarà.
+7. Descarregar l'script.
+8. Executar-lo localment al sistema de l'usuari.
+
+L'script serà generat específicament a partir de la configuració seleccionada.
+
+## 6. Generació d'scripts
+
+Una de les funcionalitats principals de la plataforma és la possibilitat de generar scripts personalitzats.
+
+L'script pot estar orientat a:
+
+1. Analitzar informació del sistema.
+2. Detectar determinats elements que poden afectar el rendiment.
+3. Identificar fitxers temporals.
+4. Obtenir informació sobre processos o configuracions.
+5. Aplicar les accions d'optimització seleccionades.
+6. Generar informació sobre els resultats obtinguts.
+
+Abans de descarregar o executar l'script, l'usuari podrà consultar les accions que realitzarà.
+
+> El tipus d'script generat dependrà del sistema operatiu i de les característiques compatibles amb la plataforma.
+
+## 7. Experiència d'usuari
+
+La plataforma està dissenyada perquè l'usuari pugui configurar una optimització sense haver de crear manualment cap script.
+
+### 7.1. Exemple de flux
 
 **1. Accés**
 
@@ -80,36 +169,50 @@ L'usuari entra a:
 
 > [URL de la plataforma]
 
-**2. Selecció**
+**2. Selecció del perfil**
 
 Selecciona el perfil que millor s'adapta a les seves necessitats.
 
-**3. Configuració**
+**3. Configuració del maquinari**
 
-La plataforma mostra les opcions i configuracions disponibles.
+Selecciona el tipus de processador i targeta gràfica.
 
-**4. Aplicació**
+**4. Configuració**
 
-L'usuari segueix el procés indicat per aplicar les optimitzacions corresponents.
+La plataforma mostra les opcions disponibles i permet personalitzar-les.
 
-**5. Resultat**
+**5. Elecció del mode**
 
-La plataforma mostra l'estat i la informació relacionada amb el procés.
+L'usuari decideix entre:
 
-## 6. Plataforma al núvol
+* Configurar i aplicar manualment.
+* Generar un script.
 
-Tot el servei es gestiona des de la plataforma web.
+**6. Aplicació**
+
+Segons el mode seleccionat, l'usuari aplica les configuracions o descarrega i executa l'script.
+
+**7. Resultat**
+
+La plataforma mostra la informació relacionada amb el procés.
+
+## 8. Plataforma al núvol
+
+La plataforma principal funciona completament des del navegador.
 
 Això permet:
 
 1. Accedir al servei des del navegador.
 2. Disposar d'un servei centralitzat al núvol.
-3. Rebre actualitzacions sense instal·lar noves versions.
+3. Rebre actualitzacions sense instal·lar noves versions de la plataforma.
 4. Gestionar el compte i les configuracions de l'usuari.
-5. Mantenir les opcions d'optimització centralitzades.
-6. Utilitzar el servei quan sigui necessari.
+5. Mantenir els perfils d'optimització centralitzats.
+6. Generar scripts segons les configuracions disponibles.
+7. Utilitzar el servei quan sigui necessari.
 
-## 7. Seguretat i privacitat
+L'únic element que s'executa localment és l'script generat per la plataforma quan l'usuari selecciona aquesta opció.
+
+## 9. Seguretat i privacitat
 
 La plataforma ha de garantir una gestió adequada de la informació dels usuaris.
 
@@ -122,8 +225,12 @@ La plataforma ha de garantir una gestió adequada de la informació dels usuaris
 5. Mesures de seguretat.
 6. Gestió de sessions.
 7. Eliminació de dades.
+8. Seguretat dels scripts generats.
+9. Verificació de les accions que realitza cada script.
 
-## 8. Tecnologies
+Els scripts haurien de mostrar de manera clara les accions que realitzaran abans que l'usuari decideixi executar-los.
+
+## 10. Tecnologies
 
 > Aquesta secció es completarà amb les tecnologies utilitzades.
 
@@ -132,9 +239,10 @@ La plataforma ha de garantir una gestió adequada de la informació dels usuaris
 * **Base de dades:** [Tecnologia]
 * **Cloud:** [Proveïdor]
 * **Autenticació:** [Tecnologia]
+* **Generació d'scripts:** [Tecnologia]
 * **Altres:** [Tecnologies]
 
-## 9. Model de negoci
+## 11. Model de negoci
 
 El servei disposarà de dos plans principals:
 
@@ -143,7 +251,7 @@ El servei disposarà de dos plans principals:
 | **Free** | [Característiques incloses]    |  [€] |
 | **Pro**  | [Característiques addicionals] |  [€] |
 
-### 9.1. Free
+### 11.1. Free
 
 El pla gratuït permet als usuaris accedir a les funcionalitats bàsiques de la plataforma.
 
@@ -153,7 +261,7 @@ El pla gratuït permet als usuaris accedir a les funcionalitats bàsiques de la 
 * [Funcionalitat]
 * [Funcionalitat]
 
-### 9.2. Pro
+### 11.2. Pro
 
 El pla Pro ofereix funcionalitats addicionals i més opcions d'optimització.
 
@@ -164,37 +272,67 @@ El pla Pro ofereix funcionalitats addicionals i més opcions d'optimització.
 * [Funcionalitat]
 * [Funcionalitat]
 
-## 10. Preguntes freqüents
+## 12. Preguntes freqüents
 
-### 10.1. És un programa que he d'instal·lar?
+### 12.1. És un programa que he d'instal·lar?
 
-No. **[Nom del projecte] és una plataforma web SaaS accessible des del navegador.**
+No. **Optigen és una plataforma web SaaS accessible des del navegador.**
 
-### 10.2. Quan puc utilitzar el servei?
+Per executar determinades funcions d'anàlisi o optimització, la plataforma pot generar un script que l'usuari descarrega i executa localment.
+
+### 12.2. Puc configurar les opcions manualment?
+
+Sí. L'usuari pot seleccionar manualment les diferents opcions d'optimització sense necessitat de generar un script.
+
+### 12.3. Puc generar un script?
+
+Sí. La plataforma pot generar un script personalitzat segons el perfil, el maquinari i les opcions seleccionades.
+
+### 12.4. Quan puc utilitzar el servei?
 
 La plataforma està disponible en qualsevol moment des de la web.
 
-### 10.3. Necessito coneixements tècnics?
+### 12.5. Necessito coneixements tècnics?
 
-No necessàriament. La plataforma està pensada per simplificar les tasques d'optimització.
+No necessàriament. La plataforma està pensada per simplificar la configuració de les opcions d'optimització.
 
-### 10.4. Quins sistemes són compatibles?
+### 12.6. Quins sistemes són compatibles?
 
-[Especificar sistemes operatius i navegadors compatibles.]
+[Especificar sistemes operatius i versions compatibles.]
 
-### 10.5. Les optimitzacions s'apliquen directament al meu equip?
+### 12.7. Quins processadors són compatibles?
 
-[Definir exactament el funcionament segons la implementació final.]
+La plataforma permet seleccionar entre:
 
-### 10.6. Quina diferència hi ha entre Free i Pro?
+* Intel
+* AMD
+
+### 12.8. Quines targetes gràfiques són compatibles?
+
+La plataforma permet seleccionar entre:
+
+* NVIDIA
+* AMD
+
+### 12.9. Què fa l'script?
+
+L'script realitza les accions definides per la configuració seleccionada a la plataforma.
+
+Abans d'executar-lo, l'usuari podrà consultar les accions que realitzarà.
+
+### 12.10. Les optimitzacions s'apliquen directament al meu equip?
+
+Les accions que requereixen accés al sistema s'executen localment mitjançant l'script generat per la plataforma.
+
+### 12.11. Quina diferència hi ha entre Free i Pro?
 
 El pla **Free** ofereix les funcionalitats bàsiques, mentre que **Pro** amplia les opcions disponibles per als usuaris.
 
-## 11. Estat del projecte
+## 13. Estat del projecte
 
 **Estat actual:** [En desenvolupament / Beta / Disponible]
 
-## 12. Contacte
+## 14. Contacte
 
 **Web:** [URL]
 
