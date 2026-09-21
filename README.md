@@ -280,8 +280,6 @@ El pla Pro ofereix funcionalitats addicionals i més opcions d'optimització.
 
 **Web:** [URL]
 
-**Email:** [Email]
+**Email:** xaviersans@iesebre.com / davidstaicu@iesebre.com
 
-**GitHub:** [URL]
-
-**Comunitat:** [URL]
+**GitHub:** [UrlRepositori](https://github.com/2DAM-202627-PROJECTE/Grup1)
