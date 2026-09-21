@@ -272,67 +272,11 @@ El pla Pro ofereix funcionalitats addicionals i més opcions d'optimització.
 * [Funcionalitat]
 * [Funcionalitat]
 
-## 12. Preguntes freqüents
-
-### 12.1. És un programa que he d'instal·lar?
-
-No. **Optigen és una plataforma web SaaS accessible des del navegador.**
-
-Per executar determinades funcions d'anàlisi o optimització, la plataforma pot generar un script que l'usuari descarrega i executa localment.
-
-### 12.2. Puc configurar les opcions manualment?
-
-Sí. L'usuari pot seleccionar manualment les diferents opcions d'optimització sense necessitat de generar un script.
-
-### 12.3. Puc generar un script?
-
-Sí. La plataforma pot generar un script personalitzat segons el perfil, el maquinari i les opcions seleccionades.
-
-### 12.4. Quan puc utilitzar el servei?
-
-La plataforma està disponible en qualsevol moment des de la web.
-
-### 12.5. Necessito coneixements tècnics?
-
-No necessàriament. La plataforma està pensada per simplificar la configuració de les opcions d'optimització.
-
-### 12.6. Quins sistemes són compatibles?
-
-[Especificar sistemes operatius i versions compatibles.]
-
-### 12.7. Quins processadors són compatibles?
-
-La plataforma permet seleccionar entre:
-
-* Intel
-* AMD
-
-### 12.8. Quines targetes gràfiques són compatibles?
-
-La plataforma permet seleccionar entre:
-
-* NVIDIA
-* AMD
-
-### 12.9. Què fa l'script?
-
-L'script realitza les accions definides per la configuració seleccionada a la plataforma.
-
-Abans d'executar-lo, l'usuari podrà consultar les accions que realitzarà.
-
-### 12.10. Les optimitzacions s'apliquen directament al meu equip?
-
-Les accions que requereixen accés al sistema s'executen localment mitjançant l'script generat per la plataforma.
-
-### 12.11. Quina diferència hi ha entre Free i Pro?
-
-El pla **Free** ofereix les funcionalitats bàsiques, mentre que **Pro** amplia les opcions disponibles per als usuaris.
-
-## 13. Estat del projecte
+## 12. Estat del projecte
 
 **Estat actual:** [En desenvolupament / Beta / Disponible]
 
-## 14. Contacte
+## 13. Contacte
 
 **Web:** [URL]
 
