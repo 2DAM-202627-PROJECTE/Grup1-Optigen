@@ -1,5 +1,7 @@
 # Optigen
 
+> Plataforma web d'optimització d'equips pensada per ajudar els usuaris a analitzar i millorar el rendiment dels seus sistemes de manera senzilla i accessible.
+
 ## 1. Sobre el projecte
 
 **Optigen** és una plataforma web SaaS orientada a la configuració i optimització de PCs i equips.
@@ -31,6 +33,18 @@ Això pot resultar complicat per a usuaris que:
 
 Optigen centralitza aquest procés en una única experiència web.
 
+### El servei permet:
+
+1. Configurar diferents opcions d'optimització.
+2. Analitzar possibles elements que poden afectar el rendiment.
+3. Facilitar la gestió de fitxers temporals.
+4. Oferir configuracions predefinides.
+5. Crear perfils segons diferents necessitats.
+6. Adaptar les configuracions segons el maquinari de l'usuari.
+7. Generar scripts personalitzats segons la configuració seleccionada.
+8. Permetre configurar les opcions manualment.
+9. Centralitzar les opcions d'optimització en una única plataforma web.
+
 ---
 
 ## 3. A qui va dirigit?
@@ -48,59 +62,69 @@ Optigen està orientat principalment a:
 
 ## 4. Com funciona?
 
-El funcionament d'Optigen es basa en quatre passos principals:
+L'usuari accedeix a la plataforma des del navegador i selecciona el tipus d'optimització que necessita.
 
-### 1. Selecció de plataforma
+```text
+Usuari
+   ↓
+Plataforma web
+   ↓
+Selecció del perfil
+   ↓
+Configuració del maquinari
+   ↓
+Configuració de l'optimització
+   ↓
+┌─────────────────────────────┐
+│                             │
+│  Configuració manual        │
+│           o                 │
+│  Generació d'script         │
+│                             │
+└─────────────────────────────┘
+   ↓
+Aplicació / execució
+   ↓
+Resultat
+```
 
-L'usuari selecciona el sistema que utilitza:
+El servei està disponible en qualsevol moment des de la web.
 
-* Windows
-* Ubuntu
+### Perfils de configuració
 
-### 2. Configuració del hardware
+La plataforma ofereix diferents perfils d'optimització adaptats a les necessitats de cada usuari.
 
-L'usuari indica la configuració del seu equip, incloent-hi els components compatibles amb Optigen.
+Exemples:
 
-Actualment, les principals opcions de hardware contemplades són:
+1. **Rendiment** — Configuració orientada a prioritzar el rendiment del sistema.
+2. **Equilibrat** — Configuració general pensada per a un ús diari.
+3. **Neteja** — Orientada a la gestió de fitxers temporals i elements innecessaris.
+4. **Gaming** — Configuració orientada a l'ús de videojocs.
+5. **Personalitzat** — Permet seleccionar manualment les opcions que es volen analitzar o configurar.
 
-* CPU Intel
-* CPU AMD
-* GPU NVIDIA
-* GPU AMD
+### Configuració del maquinari
 
-### 3. Selecció de les optimitzacions
+Per adaptar les recomanacions i configuracions al sistema de l'usuari, la plataforma permet seleccionar determinades característiques del maquinari.
 
-L'usuari selecciona manualment les opcions que vol aplicar al seu sistema.
+#### Processador
 
-Aquest procés constitueix la configuració personalitzada d'Optigen.
+L'usuari podrà seleccionar el fabricant del seu processador:
 
-Les opcions disponibles depenen de la plataforma i del hardware seleccionats.
+* **Intel**
+* **AMD**
 
-### 4. Generació de l'script
+#### Targeta gràfica
 
-A partir de totes les seleccions realitzades, Optigen genera un script personalitzat compatible amb el sistema de l'usuari.
+L'usuari també podrà seleccionar el fabricant de la seva targeta gràfica:
 
-L'usuari pot descarregar-lo i executar-lo localment al seu equip.
+* **NVIDIA**
+* **AMD**
+
+Aquestes opcions permetran adaptar les configuracions i els scripts generats segons el maquinari seleccionat.
 
 ---
 
-## 5. Perfils d'optimització
-
-Optigen ofereix diferents perfils predefinits per facilitar la configuració:
-
-1. **Rendiment**
-2. **Equilibrat**
-3. **Neteja**
-4. **Gaming**
-5. **Personalitzat**
-
-Els perfils serveixen com a punt de partida per configurar les optimitzacions.
-
-El perfil **Personalitzat** permet a l'usuari seleccionar manualment les opcions disponibles segons les seves necessitats.
-
----
-
-## 6. Configuració i generació d'scripts
+## 5. Configuració i generació d'scripts
 
 La configuració manual i la generació de l'script formen part del mateix procés.
 
@@ -130,7 +154,7 @@ L'script resultant conté les accions corresponents a les opcions seleccionades 
 
 ---
 
-## 7. Scripts per plataforma
+## 6. Scripts per plataforma
 
 Optigen genera scripts específics segons el sistema operatiu seleccionat.
 
@@ -158,7 +182,7 @@ La plataforma, les opcions disponibles i les accions generades s'adapten al sist
 
 ---
 
-## 8. Execució local
+## 7. Execució local
 
 Optigen és una plataforma web i no modifica directament el sistema operatiu de l'usuari des del navegador.
 
@@ -176,7 +200,7 @@ Aquesta arquitectura permet mantenir Optigen com una plataforma web sense necess
 
 ---
 
-## 9. Experiència d'usuari
+## 8. Experiència d'usuari
 
 L'experiència d'Optigen està dissenyada perquè el procés sigui clar i visual.
 
@@ -193,7 +217,7 @@ La transparència de la configuració és una part important de l'experiència d
 
 ---
 
-## 10. Plataforma web
+## 9. Plataforma web
 
 Optigen és un **SaaS 100% web** accessible des del navegador.
 
@@ -213,7 +237,7 @@ L'únic element que pot sortir de la plataforma és l'script generat, que l'usua
 
 ---
 
-## 11. Seguretat i transparència
+## 10. Seguretat i transparència
 
 Optigen està dissenyat perquè l'usuari tingui visibilitat sobre la configuració que ha seleccionat abans de generar l'script.
 
@@ -225,7 +249,7 @@ Optigen no necessita mantenir un agent permanent executant-se al sistema de l'us
 
 ---
 
-## 12. Tecnologies
+## 11. Tecnologies
 
 La tecnologia definitiva del projecte es definirà durant el desenvolupament.
 
@@ -259,7 +283,7 @@ Sistema encarregat de convertir les seleccions de l'usuari en un script compatib
 
 ---
 
-## 13. Model de negoci
+## 12. Model de negoci
 
 Optigen disposarà de dos plans:
 
@@ -275,19 +299,14 @@ Les funcionalitats exactes incloses en cada pla es definiran durant el desenvolu
 
 ---
 
-## 15. Estat del projecte
+## 13. Estat del projecte
 
-Optigen es troba en fase de desenvolupament i definició del producte.
+**Estat actual:** [En desenvolupament / Beta / Disponible]
 
-Les prioritats actuals són:
+## 14. Contacte
 
-* definir l'experiència web;
-* dissenyar la interfície de configuració;
-* definir el sistema de perfils;
-* definir les optimitzacions disponibles;
-* establir la compatibilitat entre sistemes i hardware;
-* desenvolupar el sistema de generació d'scripts;
-* implementar el sistema d'usuaris i plans;
-* construir la plataforma SaaS.
+**Web:** [URL]
 
-Windows i Ubuntu formen part de l'abast del producte com a plataformes equivalents.
+**Email:** xaviersans@iesebre.com / davidstaicu@iesebre.com
+
+**GitHub:** [UrlRepositori](https://github.com/2DAM-202627-PROJECTE/Grup1)
