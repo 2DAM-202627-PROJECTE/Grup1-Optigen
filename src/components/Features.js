@@ -1,40 +1,37 @@
 export function renderFeatures(element) {
-  const featuresList = [
-    {
-      title: 'Renderitzat Ràpid',
-      desc: 'Compilació instantània gràcies al motor de Vite i la nova arquitectura de Tailwind v4.',
-      icon: '⚡'
-    },
-    {
-      title: 'Modularitat Total',
-      desc: 'Organitza el teu codi Vanilla JavaScript en components independents fàcils de mantenir.',
-      icon: '🧩'
-    },
-    {
-      title: 'Estils Moderns',
-      desc: 'Dissenyat amb utilitats CSS de darrera generació, gradients i efectes de vidre de forma senzilla.',
-      icon: '🎨'
-    }
-  ];
-
   element.innerHTML = `
-    <section id="features" class="py-20 bg-slate-950/50 border-t border-slate-800/80">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <h2 class="text-3xl font-bold text-white">Tot el que necessites</h2>
-          <p class="mt-4 text-slate-400">Una arquitectura lleugera sense el pes dels marcs de treball tradicionals.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          ${featuresList.map(feature => `
-            <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all hover:-translate-y-1">
-              <div class="text-4xl mb-4">${feature.icon}</div>
-              <h3 class="text-xl font-semibold text-white mb-2">${feature.title}</h3>
-              <p class="text-slate-400 leading-relaxed text-sm">${feature.desc}</p>
-            </div>
-          `).join('')}
-        </div>
+    <section id="features" class="wire-section">
+      <div class="section-heading">
+        <span class="section-index">01</span>
+        <h2>Funcionalitats</h2>
+        <span class="section-arrow">↓</span>
       </div>
+      <div class="feature-grid">
+        <ul>
+          <li>Configuració senzilla</li>
+          <li>Resultats personalitzats</li>
+        </ul>
+        <ul>
+          <li>Procés ràpid</li>
+          <li>Control total</li>
+        </ul>
+        <ul>
+          <li>Experiència clara</li>
+          <li>Adaptat a tu</li>
+        </ul>
+      </div>
+    </section>
+    <section id="about" class="wire-section about-section">
+      <div class="section-heading"><span class="section-index">02</span><h2>Sobre nosaltres</h2><span class="section-arrow">↓</span></div>
+      <div class="about-content"><div class="image-placeholder">IMATGE</div><p>Una eina pensada per ajudar-te a prendre decisions i crear configuracions que encaixin amb les teves necessitats.</p></div>
+    </section>
+    <section id="faq" class="wire-section">
+      <div class="section-heading"><span class="section-index">03</span><h2>FAQs</h2><span class="section-arrow">↓</span></div>
+      <div class="faq-grid"><p><b>01.</b> Què és OptiGen?</p><p><b>02.</b> Com funciona?</p><p><b>03.</b> Puc personalitzar-ho?</p><p><b>04.</b> Com puc contactar?</p></div>
+    </section>
+    <section id="pricing" class="wire-section pricing-section">
+      <div class="section-heading"><span class="section-index">04</span><h2>Preus</h2><span class="section-arrow">↓</span></div>
+      <div class="pricing-grid"><article><h3>Opció 1</h3><span>Configuració essencial</span></article><article class="featured-price"><h3>Opció 2</h3><span>Configuració completa</span></article></div>
     </section>
   `;
 }

@@ -1,21 +1,12 @@
 export function renderFooter(element) {
   element.innerHTML = `
-    <footer class="border-t border-slate-800 bg-slate-950 py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-        <div class="flex items-center gap-2">
-          <div class="h-6 w-6 rounded bg-indigo-600 flex items-center justify-center text-xs font-bold text-white">V</div>
-          <span class="font-bold text-slate-200">ViteApp</span>
-        </div>
-        
-        <p class="text-xs text-slate-500">
-          © ${new Date().getFullYear()} Landing Page. Construït amb Vite, Vanilla JS i Tailwind CSS v4.
-        </p>
-
-        <div class="flex gap-6 text-sm text-slate-400">
-          <a href="#" class="hover:text-indigo-400 transition-colors">Privacitat</a>
-          <a href="#" class="hover:text-indigo-400 transition-colors">Termes</a>
-        </div>
+    <footer id="contact" class="footer">
+      <div class="footer-top">
+        <div><a class="brand" href="#home"><span class="brand-mark">O</span><span>OPTIGEN</span></a><p>Configura. Genera.<br />Pren el control.</p></div>
+        <div class="newsletter"><h2>Newsletter</h2><p>Rep les novetats i actualitzacions d'OptiGen.</p><form><label class="sr-only" for="email">Correu electrònic</label><input id="email" type="email" placeholder="El teu correu electrònic" /><button class="button button-primary" type="submit">Subscriu-me</button></form></div>
+        <div class="footer-contact"><h2>Contacta'ns</h2><p>Per a qualsevol consulta, escrigu-nos a:</p><a href="mailto:hello@optigen.cat">hello@optigen.cat</a></div>
       </div>
+      <div class="footer-bottom"><span>© ${new Date().getFullYear()} OptiGen</span><a href="#terms">Termes i condicions</a><span>MENU ↑</span></div>
     </footer>
   `;
 }
