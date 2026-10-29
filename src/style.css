@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --orange: #f47b20;
+  --orange: #6bcf81;
   --ink: #080b10;
   --navy: #101923;
   --muted: #9da5ae;
@@ -84,4 +84,4 @@ li::before { color: var(--orange); content: "✓"; margin-right: .75rem; }
   .feature-grid, .aboutUs
 -content, .faq-grid, .pricing-grid, .footer-top { grid-template-columns: 1fr; }
   .footer-bottom { flex-wrap: wrap; gap: .8rem; }
-}
+} 
