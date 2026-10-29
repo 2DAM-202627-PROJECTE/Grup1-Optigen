@@ -21,9 +21,9 @@ export function renderFeatures(element) {
         </ul>
       </div>
     </section>
-    <section id="about" class="wire-section about-section">
+    <section id="aboutUs" class="wire-section aboutUs-section">
       <div class="section-heading"><span class="section-index">02</span><h2>Sobre nosaltres</h2><span class="section-arrow">↓</span></div>
-      <div class="about-content"><div class="image-placeholder">IMATGE</div><p>Una eina pensada per ajudar-te a prendre decisions i crear configuracions que encaixin amb les teves necessitats.</p></div>
+      <div class="aboutUs-content"><div class="image-placeholder">IMATGE</div><p>Una eina pensada per ajudar-te a prendre decisions i crear configuracions que encaixin amb les teves necessitats.</p></div>
     </section>
     <section id="faq" class="wire-section">
       <div class="section-heading"><span class="section-index">03</span><h2>FAQs</h2><span class="section-arrow">↓</span></div>

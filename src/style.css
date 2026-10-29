@@ -53,9 +53,9 @@ h1 span { color: var(--orange); }
 ul { list-style: none; margin: 0; padding: 0; }
 li { border-bottom: 1px dashed var(--muted); color: #fff; padding: .8rem 0; }
 li::before { color: var(--orange); content: "✓"; margin-right: .75rem; }
-.about-content { align-items: center; display: grid; gap: clamp(2rem, 8vw, 8rem); grid-template-columns: 1fr 1fr; margin: 3rem auto 0; max-width: 900px; }
+.aboutUs-content { align-items: center; display: grid; gap: clamp(2rem, 8vw, 8rem); grid-template-columns: 1fr 1fr; margin: 3rem auto 0; max-width: 900px; }
 .image-placeholder { align-items: center; background: #26313c; color: var(--muted); display: flex; height: 190px; justify-content: center; }
-.about-content p { color: var(--muted); line-height: 1.8; }
+.aboutUs-content p { color: var(--muted); line-height: 1.8; }
 .faq-grid { grid-template-columns: repeat(2, 1fr); }
 .faq-grid p { border-bottom: 1px dashed var(--muted); padding: .8rem; }
 .faq-grid b { color: var(--orange); margin-right: .8rem; }
@@ -81,6 +81,7 @@ li::before { color: var(--orange); content: "✓"; margin-right: .75rem; }
   .navbar .button { margin-left: auto; }
   .hero { grid-template-columns: 1fr; }
   .hero-visual { border-left: 0; border-top: 1px solid var(--line); margin-top: 3rem; min-height: 150px; }
-  .feature-grid, .about-content, .faq-grid, .pricing-grid, .footer-top { grid-template-columns: 1fr; }
+  .feature-grid, .aboutUs
+-content, .faq-grid, .pricing-grid, .footer-top { grid-template-columns: 1fr; }
   .footer-bottom { flex-wrap: wrap; gap: .8rem; }
 }
