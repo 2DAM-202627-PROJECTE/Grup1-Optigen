@@ -29,7 +29,7 @@ a { color: inherit; text-decoration: none; }
 }
 .brand { align-items: center; display: inline-flex; font-size: .85rem; font-weight: 700; gap: .6rem; letter-spacing: .13em; }
 .brand-mark { align-items: center; border: 2px solid var(--orange); border-radius: 50%; color: var(--orange); display: inline-flex; height: 25px; justify-content: center; width: 25px; }
-.nav-links { display: flex; gap: clamp(1rem, 3vw, 2.5rem); margin-left: auto; }
+.nav-links { display: flex; justify-content: center; gap: clamp(1rem, 3vw, 2.5rem); }
 .nav-links a { color: var(--muted); font-size: .78rem; }
 .nav-links a:hover, .nav-links .active { color: #fff; }
 .button { border: 1px solid transparent; cursor: pointer; display: inline-block; font-size: .78rem; padding: .8rem 1.25rem; text-align: center; }
@@ -76,7 +76,7 @@ li::before { color: var(--orange); content: "✓"; margin-right: .75rem; }
 .sr-only { height: 1px; margin: -1px; overflow: hidden; position: absolute; width: 1px; }
 
 @media (max-width: 700px) {
-  .navbar { flex-wrap: wrap; }
+  .navbar { flex-wrap: wrap;}
   .nav-links { order: 3; overflow-x: auto; width: 100%; }
   .navbar .button { margin-left: auto; }
   .hero { grid-template-columns: 1fr; }

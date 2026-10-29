@@ -3,7 +3,7 @@ export function renderHero(element) {
     <section id="home" class="hero section-frame">
       <div class="hero-copy">
         <p class="eyebrow">Lorem ipsum dolor sit amet</p>
-        <h1>Lorem ipsum <span>dolor sit amet.</span></h1>
+        <h1>OPTIGEN <span>dolor sit amet.</span></h1>
         <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum, justo at tincidunt consequat, eros lorem malesuada sem.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#home">Lorem ipsum</a>
