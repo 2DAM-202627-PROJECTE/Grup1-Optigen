@@ -1,16 +1,16 @@
 export function renderHero(element) {
   element.innerHTML = `
-    <section id="home" class="hero section-frame">
-      <div class="hero-copy">
-        <p class="eyebrow">Lorem ipsum dolor sit amet</p>
-        <h1>OPTIGEN <span>dolor sit amet.</span></h1>
-        <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum, justo at tincidunt consequat, eros lorem malesuada sem.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#home">Lorem ipsum</a>
-          <a class="button button-ghost" href="#home">Lorem ipsum</a>
+    <section id="home" class="grid min-h-[470px] grid-cols-[1.4fr_1fr] items-stretch border-b border-[#33404d] bg-[#101923] px-[clamp(1.25rem,7vw,6rem)] py-20 max-[700px]:grid-cols-1">
+      <div class="max-w-[700px] self-center">
+        <p class="text-[.72rem] uppercase tracking-[.16em] text-[#f47b20]">Lorem ipsum dolor sit amet</p>
+        <h1 class="my-4 mb-6 max-w-[800px] text-[clamp(2.7rem,7vw,6.5rem)] font-bold leading-[.96]">OPTIGEN <span class="text-[#f47b20]">dolor sit amet.</span></h1>
+        <p class="max-w-[470px] leading-[1.6] text-[#9da5ae]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum, justo at tincidunt consequat, eros lorem malesuada sem.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a class="inline-block border border-transparent bg-[#f47b20] px-5 py-[.8rem] text-center text-[.78rem] font-bold text-[#080b10] no-underline" href="#home">Lorem ipsum</a>
+          <a class="inline-block border-b border-[#f47b20] px-5 py-[.8rem] text-center text-[.78rem] text-white no-underline" href="#home">Lorem ipsum</a>
         </div>
       </div>
-      <div class="hero-visual" aria-label="Espai reservat per a la il·lustració principal">
+      <div class="flex items-center justify-center border-l border-[#33404d] tracking-[.1em] text-[#9da5ae] max-[700px]:mt-12 max-[700px]:min-h-[150px] max-[700px]:border-l-0 max-[700px]:border-t" aria-label="Espai reservat per a la il·lustració principal">
         <span>DECORACIÓ<br />VISUAL</span>
       </div>
     </section>

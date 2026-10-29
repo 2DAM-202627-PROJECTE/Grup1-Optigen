@@ -5,7 +5,7 @@ import { renderFeatures } from './components/Features.js';
 import { renderFooter } from './components/Footer.js';
 
 document.querySelector('#app').innerHTML = `
-  <div class="site-shell">
+  <div class="min-h-screen bg-[#080b10]">
     <div id="navbar"></div>
     <main>
       <div id="hero"></div>
