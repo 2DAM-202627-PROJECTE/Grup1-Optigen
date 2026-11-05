@@ -13,7 +13,7 @@ export function renderHero(element) {
 
         <h1 class="my-4 mb-6 max-w-[800px] text-[clamp(2.7rem,7vw,6.5rem)] font-bold leading-[.96]">
           OPTIGEN
-          <span class="text-[clamp(4rem,2.5vw,6.5rem)] text-[#f47b20]">
+          <span class="inline-block text-[clamp(4rem,2.5vw,6.5rem)] leading-none text-[#f47b20]">
             Configura Genera Executa
           </span>
         </h1>
