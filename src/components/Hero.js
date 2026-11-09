@@ -43,13 +43,65 @@ export function renderHero(element) {
       </div>
 
       <div
-        class="flex items-center justify-center border-l border-[#33404d] tracking-[.1em] text-[#9da5ae] max-[700px]:mt-12 max-[700px]:min-h-[150px] max-[700px]:border-l-0 max-[700px]:border-t"
-        aria-label="Espai reservat per a la il·lustració principal"
+        class="relative flex items-center justify-center border-l border-[#33404d] px-8 py-12 max-[700px]:mt-12 max-[700px]:min-h-[390px] max-[700px]:border-l-0 max-[700px]:border-t max-[700px]:px-0"
+        aria-label="Previsualització del configurador d'OptiGen"
       >
-        <span>
-          DECORACIÓ<br />
-          VISUAL
-        </span>
+        <div class="absolute right-[8%] top-[12%] h-24 w-24 rounded-full border border-[#f47b20]/20 max-[700px]:right-[4%]">
+          <div class="absolute inset-3 rounded-full border border-dashed border-[#f47b20]/40"></div>
+          <span class="absolute -right-2 top-1/2 h-2 w-2 rounded-full bg-[#f47b20] shadow-[0_0_16px_#f47b20]"></span>
+        </div>
+
+        <div class="relative w-full max-w-[430px] rotate-[-2deg] border border-[#33404d] bg-[#151f2b] p-4 shadow-[18px_22px_0_rgba(8,11,16,.55)] sm:p-5">
+          <div class="mb-5 flex items-center justify-between border-b border-[#33404d] pb-3">
+            <div class="flex items-center gap-2">
+              <span class="h-2 w-2 rounded-full bg-[#f47b20] shadow-[0_0_10px_#f47b20]"></span>
+              <span class="text-[.62rem] font-bold uppercase tracking-[.18em] text-white">Configurador</span>
+            </div>
+            <span class="text-[.58rem] uppercase tracking-[.12em] text-[#788492]">Pas 02 / 03</span>
+          </div>
+
+          <div class="grid grid-cols-[1fr_auto] gap-4">
+            <div>
+              <p class="mb-1 text-[.62rem] uppercase tracking-[.14em] text-[#788492]">Perfil actiu</p>
+              <h2 class="text-xl font-bold text-white">Equilibrat</h2>
+              <p class="mt-1 text-[.72rem] leading-[1.5] text-[#9da5ae]">Rendiment estable per al dia a dia.</p>
+            </div>
+            <div class="flex h-[74px] w-[74px] items-center justify-center rounded-full border-[5px] border-[#f47b20] border-l-[#33404d] text-center">
+              <span class="text-lg font-bold text-white">82<small class="text-[.62rem] text-[#f47b20]">%</small></span>
+            </div>
+          </div>
+
+          <div class="mt-5 space-y-3">
+            <div>
+              <div class="mb-1 flex justify-between text-[.6rem] uppercase tracking-[.1em] text-[#788492]">
+                <span>Rendiment</span><span class="text-[#f47b20]">Alt</span>
+              </div>
+              <div class="h-1 bg-[#283542]"><div class="h-full w-[78%] bg-[#f47b20]"></div></div>
+            </div>
+            <div>
+              <div class="mb-1 flex justify-between text-[.6rem] uppercase tracking-[.1em] text-[#788492]">
+                <span>Consum</span><span class="text-[#f47b20]">Òptim</span>
+              </div>
+              <div class="h-1 bg-[#283542]"><div class="h-full w-[64%] bg-[#f47b20]"></div></div>
+            </div>
+          </div>
+
+          <div class="mt-5 grid grid-cols-2 gap-2">
+            <div class="border border-[#33404d] bg-[#101923] p-3">
+              <p class="text-[.58rem] uppercase tracking-[.1em] text-[#788492]">Canvis preparats</p>
+              <p class="mt-1 text-lg font-bold text-white">12</p>
+            </div>
+            <div class="border border-[#33404d] bg-[#101923] p-3">
+              <p class="text-[.58rem] uppercase tracking-[.1em] text-[#788492]">Estat</p>
+              <p class="mt-1 flex items-center gap-1.5 text-[.72rem] font-bold text-[#f47b20]"><span class="h-1.5 w-1.5 rounded-full bg-[#f47b20]"></span>Preparat</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-[13%] left-[5%] border border-[#33404d] bg-[#101923] px-3 py-2 shadow-[8px_8px_0_rgba(8,11,16,.4)] max-[700px]:bottom-[7%]">
+          <p class="text-[.56rem] uppercase tracking-[.12em] text-[#788492]">Script personalitzat</p>
+          <p class="mt-1 text-[.68rem] text-white"><span class="mr-1 text-[#f47b20]">✓</span>Revisió disponible</p>
+        </div>
       </div>
     </section>
   `;
