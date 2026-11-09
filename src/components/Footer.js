@@ -28,6 +28,116 @@ export function renderFooter(element) {
             Configura. Genera.<br />
             Millora el teu equip.
           </p>
+
+          <div class="mt-8">
+            <h2 class="mt-0 text-base uppercase">
+              Contacta'ns
+            </h2>
+            <p class="text-[.8rem] leading-[1.6] text-[#9da5ae]">
+              Per a qualsevol consulta:
+            </p>
+            <div class="flex flex-col gap-1">
+              <a
+                class="text-[.8rem] text-[#f47b20] no-underline"
+                href="mailto:davidstaicu@iesebre.com"
+              >
+                davidstaicu@iesebre.com
+              </a>
+              <a
+                class="text-[.8rem] text-[#f47b20] no-underline"
+                href="mailto:xaviersans@iesebre.com"
+              >
+                xaviersans@iesebre.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulari de contacte -->
+        <div>
+          <h2 class="mt-0 text-base uppercase">
+            Parlem del teu equip
+          </h2>
+
+          <p class="text-[.8rem] leading-[1.6] text-[#9da5ae]">
+            Explica'ns què necessites i et respondrem tan aviat com puguem.
+          </p>
+
+          <form
+            class="mt-4 grid grid-cols-2 gap-3 max-[700px]:grid-cols-1"
+            action="mailto:davidstaicu@iesebre.com,xaviersans@iesebre.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label
+              class="flex flex-col gap-1 text-[.62rem] uppercase tracking-[.1em] text-[#788492]"
+              for="name"
+            >
+              Nom
+              <input
+                class="min-w-0 border border-[#33404d] bg-[#101923] p-3 text-[.78rem] normal-case tracking-normal text-white outline-none transition-colors placeholder:text-[#667381] focus:border-[#f47b20]"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="El teu nom"
+                autocomplete="name"
+                required
+              />
+            </label>
+
+            <label
+              class="flex flex-col gap-1 text-[.62rem] uppercase tracking-[.1em] text-[#788492]"
+              for="email"
+            >
+              Correu electrònic
+              <input
+                class="min-w-0 border border-[#33404d] bg-[#101923] p-3 text-[.78rem] normal-case tracking-normal text-white outline-none transition-colors placeholder:text-[#667381] focus:border-[#f47b20]"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="tu@exemple.cat"
+                autocomplete="email"
+                required
+              />
+            </label>
+
+            <label
+              class="col-span-2 flex flex-col gap-1 text-[.62rem] uppercase tracking-[.1em] text-[#788492] max-[700px]:col-span-1"
+              for="subject"
+            >
+              Assumpte
+              <input
+                class="min-w-0 border border-[#33404d] bg-[#101923] p-3 text-[.78rem] normal-case tracking-normal text-white outline-none transition-colors placeholder:text-[#667381] focus:border-[#f47b20]"
+                id="subject"
+                name="subject"
+                type="text"
+                placeholder="Com et podem ajudar?"
+                required
+              />
+            </label>
+
+            <label
+              class="col-span-2 flex flex-col gap-1 text-[.62rem] uppercase tracking-[.1em] text-[#788492] max-[700px]:col-span-1"
+              for="message"
+            >
+              Missatge
+              <textarea
+                class="min-h-[84px] resize-y border border-[#33404d] bg-[#101923] p-3 text-[.78rem] normal-case tracking-normal text-white outline-none transition-colors placeholder:text-[#667381] focus:border-[#f47b20]"
+                id="message"
+                name="message"
+                placeholder="Descriu breument la teva consulta..."
+                rows="3"
+                required
+              ></textarea>
+            </label>
+
+            <button
+              class="col-span-2 justify-self-start border-0 bg-[#f47b20] px-5 py-[.8rem] text-[.78rem] font-bold text-[#080b10] transition-colors hover:bg-[#ff9140] max-[700px]:col-span-1"
+              type="submit"
+            >
+              Envia el missatge →
+            </button>
+          </form>
         </div>
 
         <!-- Newsletter -->
@@ -40,46 +150,34 @@ export function renderFooter(element) {
             Rep les novetats i actualitzacions d'OptiGen.
           </p>
 
-          <form class="mt-4 flex">
+          <form
+            class="mt-4 flex flex-col gap-3"
+            action="mailto:davidstaicu@iesebre.com,xaviersans@iesebre.com"
+            method="post"
+            enctype="text/plain"
+          >
             <label
-              class="sr-only absolute -m-px h-px w-px overflow-hidden"
-              for="email"
+              class="flex flex-col gap-1 text-[.62rem] uppercase tracking-[.1em] text-[#788492]"
+              for="newsletter-email"
             >
               Correu electrònic
+              <input
+                class="min-w-0 border border-[#33404d] bg-[#101923] p-3 text-[.78rem] normal-case tracking-normal text-white outline-none transition-colors placeholder:text-[#667381] focus:border-[#f47b20]"
+                id="newsletter-email"
+                name="email"
+                type="email"
+                placeholder="El teu correu electrònic"
+                autocomplete="email"
+                required
+              />
             </label>
-
-            <input
-              class="min-w-0 w-full border border-[#33404d] bg-[#101923] p-[.8rem] text-white"
-              id="email"
-              type="email"
-              placeholder="El teu correu electrònic"
-            />
-
             <button
-              class="whitespace-nowrap border-0 bg-[#f47b20] px-5 py-[.8rem] text-[.78rem] font-bold text-[#080b10]"
+              class="self-start border-0 bg-[#f47b20] px-5 py-[.8rem] text-[.78rem] font-bold text-[#080b10] transition-colors hover:bg-[#ff9140]"
               type="submit"
             >
-              Subscriu-me
+              Subscriu-me →
             </button>
           </form>
-        </div>
-
-        <!-- Contacte -->
-        <div>
-          <h2 class="mt-0 text-base uppercase">
-            Contacta'ns
-          </h2>
-
-          <p class="text-[.8rem] leading-[1.6] text-[#9da5ae]">
-            Per a qualsevol consulta, escrigu-nos a:
-          </p>
-
-          <a
-            class="text-[.8rem] text-[#f47b20] no-underline"
-            href="mailto:hello@optigen.cat"
-          >
-            hello@optigen.cat
-          </a>
         </div>
 
       </div>
