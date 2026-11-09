@@ -195,6 +195,15 @@ export function renderFeatures(element) {
             <span class="text-[#f47b20]">El teu control.</span>
           </p>
         </div>
+
+        <div class="col-span-3 mt-8 text-center">
+         <a
+            class="inline-block border border-transparent bg-[#f47b20] px-5 py-[.8rem] text-center text-[.78rem] font-bold text-[#080b10] no-underline"
+            href="#pricing"
+          >
+            Veure més
+          </a>
+        </div>
       </div>
     </section>
 
@@ -384,7 +393,7 @@ export function renderFeatures(element) {
     </section>
 
 
-    <section
+<section
   id="pricing"
   class="border-b border-[#33404d] px-[clamp(1.25rem,7vw,6rem)] py-20"
 >
@@ -398,65 +407,114 @@ export function renderFeatures(element) {
   </div>
 
   <div class="mx-auto mt-10 grid max-w-[900px] grid-cols-2 gap-5 max-[700px]:grid-cols-1">
+
+    <!-- FREE -->
     <div class="border border-[#33404d] p-8">
       <span class="text-[.6rem] tracking-[.16em] text-[#f47b20]">
-        01
+        01 / FREE
       </span>
 
       <h3 class="mt-5 text-2xl font-semibold">
-        Perfil equilibrat
+        Free
       </h3>
 
       <p class="mt-2 text-[.8rem] text-[#9da5ae]">
-        Un punt de partida segur per al dia a dia.
+        Les eines essencials per optimitzar el teu equip.
       </p>
 
       <div class="my-8 border-t border-dashed border-[#33404d]"></div>
 
       <p class="text-[.6rem] tracking-[.16em] text-[#9da5ae]">
-        PREU PENDENT D'ANUNCIAR
+        OPCIONS D'OPTIMITZACIÓ
       </p>
 
-      <div class="mt-5 space-y-2">
-        <div class="h-[9px] w-full max-w-[212px] bg-[#1c2935]"></div>
-        <div class="h-[9px] w-full max-w-[212px] bg-[#1c2935]"></div>
-        <div class="h-[9px] w-full max-w-[212px] bg-[#1c2935]"></div>
+      <div class="mt-5 space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Performance</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Balanced</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#58636e]">×</span>
+          <span class="text-sm text-[#9da5ae]">Cleanup</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#58636e]">×</span>
+          <span class="text-sm text-[#9da5ae]">Gaming</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#58636e]">×</span>
+          <span class="text-sm text-[#9da5ae]">Custom</span>
+        </div>
       </div>
 
       <p class="mt-7 text-[.6rem] tracking-[.16em] text-[#9da5ae]">
-        DETALLS PROPERAMENT
+        ACCÉS GRATUÏT
       </p>
     </div>
 
+    <!-- PREMIUM -->
     <div class="border border-[#f47b20] p-8">
       <span class="text-[.6rem] tracking-[.16em] text-[#f47b20]">
-        02
+        02 / PREMIUM
       </span>
 
       <h3 class="mt-5 text-2xl font-semibold">
-        Perfil avançat
+        Premium
       </h3>
 
       <p class="mt-2 text-[.8rem] text-[#9da5ae]">
-        Més control per ajustar cada detall.
+        Desbloqueja totes les opcions i personalitza cada detall.
       </p>
 
       <div class="my-8 border-t border-dashed border-[#33404d]"></div>
 
       <p class="text-[.6rem] tracking-[.16em] text-[#9da5ae]">
-        PREU PENDENT D'ANUNCIAR
+        OPCIONS D'OPTIMITZACIÓ
       </p>
 
-      <div class="mt-5 space-y-2">
-        <div class="h-[9px] w-full max-w-[212px] bg-[#1c2935]"></div>
-        <div class="h-[9px] w-full max-w-[212px] bg-[#1c2935]"></div>
-        <div class="h-[9px] w-full max-w-[212px] bg-[#1c2935]"></div>
+      <div class="mt-5 space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Performance</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Balanced</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Cleanup</span>
+          <span class="text-[.55rem] tracking-[.1em] text-[#f47b20]">PREMIUM</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Gaming</span>
+          <span class="text-[.55rem] tracking-[.1em] text-[#f47b20]">PREMIUM</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Custom</span>
+          <span class="text-[.55rem] tracking-[.1em] text-[#f47b20]">PREMIUM</span>
+        </div>
       </div>
 
       <p class="mt-7 text-[.6rem] tracking-[.16em] text-[#9da5ae]">
-        DETALLS PROPERAMENT
+        ACCÉS COMPLET
       </p>
     </div>
+
   </div>
 </section>
   `;
