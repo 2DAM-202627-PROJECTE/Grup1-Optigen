@@ -128,62 +128,83 @@ export function renderFeatures(element) {
 
     <section
       id="aboutUs"
-      class="border-b border-[#33404d] px-[clamp(1.25rem,7vw,6rem)] py-[clamp(3rem,8vw,7rem)]"
+      class="border-b border-[#33404d] px-[clamp(1.25rem,7vw,6rem)] py-16"
     >
       <div class="relative flex items-center justify-center gap-4">
-        <span class="text-[.72rem] uppercase tracking-[.16em] text-[#f47b20]">
-          02
-        </span>
-
+        <span class="text-[.72rem] text-[#f47b20]">02</span>
+        <span class="h-px w-5 bg-[#33404d]"></span>
         <h2 class="m-0 text-[clamp(1.5rem,3vw,2.25rem)] uppercase">
           Sobre nosaltres
         </h2>
-
-        <span class="absolute right-0 text-[1.5rem] text-[#f47b20]">
-          ↓
-        </span>
+        <span class="absolute right-0 text-[#f47b20]">↗</span>
       </div>
 
-      <div
-      class="mx-auto mt-16 grid max-w-[1000px] grid-cols-2 gap-12 max-[700px]:grid-cols-1"
-      >
-        <div class="max-[700px]:order-2">
-          <p class="leading-[1.8] text-[#9da5ae]">
-            OptiGen neix per simplificar la manera com configurem i
-            optimitzem els nostres equips.
-          </p>
+      <div class="mx-auto mt-10 max-w-[944px]">
+        <div class="mb-12 text-center">
+          <h3 class="mx-auto mb-4 max-w-[500px] text-[clamp(1.3rem,3vw,1.8rem)] font-semibold leading-[1.2]">
+            La tecnologia hauria de ser
+            <span class="text-[#f47b20]">més accessible.</span>
+          </h3>
 
-          <h3 class="mt-6 text-white">La nostra idea</h3>
-          <p class="leading-[1.8] text-[#9da5ae]">
-            Fer accessible la configuració del sistema.
-          </p>
-
-          <h3 class="mt-6 text-white">El nostre objectiu</h3>
-          <p class="leading-[1.8] text-[#9da5ae]">
-            Donar més autonomia als usuaris.
+          <p class="text-[.8rem] text-[#9da5ae]">
+            OptiGen neix per simplificar la manera com configurem i optimitzem els nostres equips.
           </p>
         </div>
 
-        <div>
-          <h3 class="text-white">La nostra filosofia</h3>
-          <p class="leading-[1.8] text-[#9da5ae]">
-            Simplicitat, transparència i control.
-          </p>
+        <div class="grid grid-cols-2 gap-4 max-[700px]:grid-cols-1">
+          <div class="border border-[#f47b20] p-8">
+            <span class="text-[.6rem] tracking-[.16em] text-[#f47b20]">
+              01 / LA NOSTRA IDEA
+            </span>
+            <h3 class="mt-5 text-lg font-semibold">
+              Fer accessible la configuració del sistema.
+            </h3>
+          </div>
 
-          <h3 class="mt-6 text-white">La nostra prioritat</h3>
-          <p class="leading-[1.8] text-[#9da5ae]">
-            Que cada canvi sigui comprensible.
+          <div class="border border-[#33404d] p-8">
+            <span class="text-[.6rem] tracking-[.16em] text-[#f47b20]">
+              02 / LA NOSTRA FILOSOFIA
+            </span>
+            <h3 class="mt-5 text-lg font-semibold">
+              Simplicitat, transparència i control.
+            </h3>
+          </div>
+
+          <div class="border border-[#33404d] p-8">
+            <span class="text-[.6rem] tracking-[.16em] text-[#f47b20]">
+              03 / EL NOSTRE OBJECTIU
+            </span>
+            <h3 class="mt-5 text-lg font-semibold">
+              Donar més autonomia als usuaris.
+            </h3>
+          </div>
+
+          <div class="border border-[#33404d] p-8">
+            <span class="text-[.6rem] tracking-[.16em] text-[#f47b20]">
+              04 / LA NOSTRA PRIORITAT
+            </span>
+            <h3 class="mt-5 text-lg font-semibold">
+              Que cada canvi sigui comprensible.
+            </h3>
+          </div>
+        </div>
+
+        <div class="mt-11 border-y border-[#33404d] py-8 text-center">
+          <p class="text-[clamp(1.1rem,2.5vw,1.5rem)] font-semibold">
+            El teu equip. Les teves decisions.
+            <span class="text-[#f47b20]">El teu control.</span>
           </p>
         </div>
-      </div>
-      <div class="col-span-3 mt-8 text-center">
+
+        <div class="col-span-3 mt-8 text-center">
          <a
             class="inline-block border border-transparent bg-[#f47b20] px-5 py-[.8rem] text-center text-[.78rem] font-bold text-[#080b10] no-underline"
             href="#pricing"
           >
-            Coneixer-nos més
+            Veure més
           </a>
         </div>
+      </div>
     </section>
 
     
@@ -372,47 +393,129 @@ export function renderFeatures(element) {
     </section>
 
 
-    <section
-      id="pricing"
-      class="border-b border-[#33404d] px-[clamp(1.25rem,7vw,6rem)] py-[clamp(3rem,8vw,7rem)]"
-    >
-      <div class="relative flex items-center justify-center gap-4">
-        <span class="text-[.72rem] uppercase tracking-[.16em] text-[#f47b20]">
-          04
-        </span>
+<section
+  id="pricing"
+  class="border-b border-[#33404d] px-[clamp(1.25rem,7vw,6rem)] py-20"
+>
+  <div class="relative flex items-center justify-center gap-4">
+    <span class="text-[.72rem] text-[#f47b20]">04</span>
+    <span class="h-px w-5 bg-[#33404d]"></span>
+    <h2 class="m-0 text-[clamp(1.5rem,3vw,2.25rem)] uppercase">
+      Preus
+    </h2>
+    <span class="absolute right-0 text-[#f47b20]">↗</span>
+  </div>
 
-        <h2 class="m-0 text-[clamp(1.5rem,3vw,2.25rem)] uppercase">
-          Preus
-        </h2>
+  <div class="mx-auto mt-10 grid max-w-[900px] grid-cols-2 gap-5 max-[700px]:grid-cols-1">
 
-        <span class="absolute right-0 text-[1.5rem] text-[#f47b20]">
-          ↓
-        </span>
+    <!-- FREE -->
+    <div class="border border-[#33404d] p-8">
+      <span class="text-[.6rem] tracking-[.16em] text-[#f47b20]">
+        01 / FREE
+      </span>
+
+      <h3 class="mt-5 text-2xl font-semibold">
+        Free
+      </h3>
+
+      <p class="mt-2 text-[.8rem] text-[#9da5ae]">
+        Les eines essencials per optimitzar el teu equip.
+      </p>
+
+      <div class="my-8 border-t border-dashed border-[#33404d]"></div>
+
+      <p class="text-[.6rem] tracking-[.16em] text-[#9da5ae]">
+        OPCIONS D'OPTIMITZACIÓ
+      </p>
+
+      <div class="mt-5 space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Performance</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Balanced</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#58636e]">×</span>
+          <span class="text-sm text-[#9da5ae]">Cleanup</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#58636e]">×</span>
+          <span class="text-sm text-[#9da5ae]">Gaming</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#58636e]">×</span>
+          <span class="text-sm text-[#9da5ae]">Custom</span>
+        </div>
       </div>
 
-      <div
-        class="mx-auto mt-12 grid max-w-[1000px] grid-cols-2 gap-6 max-[700px]:grid-cols-1"
-      >
-        <article class="border border-[#33404d] p-8">
-          <h3 class="mt-0 uppercase">
-            Perfil equilibrat
-          </h3>
+      <p class="mt-7 text-[.6rem] tracking-[.16em] text-[#9da5ae]">
+        ACCÉS GRATUÏT
+      </p>
+    </div>
 
-          <span class="text-[#9da5ae]">
-            Un punt de partida segur per al dia a dia.
-          </span>
-        </article>
+    <!-- PREMIUM -->
+    <div class="border border-[#f47b20] p-8">
+      <span class="text-[.6rem] tracking-[.16em] text-[#f47b20]">
+        02 / PREMIUM
+      </span>
 
-        <article class="border border-[#f47b20] p-8">
-          <h3 class="mt-0 uppercase">
-            Perfil avançat
-          </h3>
+      <h3 class="mt-5 text-2xl font-semibold">
+        Premium
+      </h3>
 
-          <span class="text-[#9da5ae]">
-            Més control per ajustar cada detall.
-          </span>
-        </article>
+      <p class="mt-2 text-[.8rem] text-[#9da5ae]">
+        Desbloqueja totes les opcions i personalitza cada detall.
+      </p>
+
+      <div class="my-8 border-t border-dashed border-[#33404d]"></div>
+
+      <p class="text-[.6rem] tracking-[.16em] text-[#9da5ae]">
+        OPCIONS D'OPTIMITZACIÓ
+      </p>
+
+      <div class="mt-5 space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Performance</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Balanced</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Cleanup</span>
+          <span class="text-[.55rem] tracking-[.1em] text-[#f47b20]">PREMIUM</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Gaming</span>
+          <span class="text-[.55rem] tracking-[.1em] text-[#f47b20]">PREMIUM</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-[#f47b20]">✓</span>
+          <span class="text-sm">Custom</span>
+          <span class="text-[.55rem] tracking-[.1em] text-[#f47b20]">PREMIUM</span>
+        </div>
       </div>
-    </section>
+
+      <p class="mt-7 text-[.6rem] tracking-[.16em] text-[#9da5ae]">
+        ACCÉS COMPLET
+      </p>
+    </div>
+
+  </div>
+</section>
   `;
 }
