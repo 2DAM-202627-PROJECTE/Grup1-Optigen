@@ -1,23 +1,17 @@
 import './style.css';
-import { renderNavbar } from './components/Navbar.js';
-import { renderHero } from './components/Hero.js';
-import { renderFeatures } from './components/Features.js';
-import { renderFooter } from './components/Footer.js';
+import navbarHtml from './components/Navbar.html?raw';
+import heroHtml from './components/Hero.html?raw';
+import featuresHtml from './components/Features.html?raw';
+import footerHtml from './components/Footer.html?raw';
 import { initAnimations } from './animations.js';
 
-document.querySelector('#app').innerHTML = `
-  <div class="min-h-screen bg-[#080b10]">
-    <div id="navbar"></div>
-    <main>
-      <div id="hero"></div>
-      <div id="features"></div>
-    </main>
-    <div id="footer"></div>
-  </div>
-`;
+export function renderHtml(element, rawHtml) {
+  element.innerHTML = rawHtml;
+}
 
-renderNavbar(document.querySelector('#navbar'));
-renderHero(document.querySelector('#hero'));
-renderFeatures(document.querySelector('#features'));
-renderFooter(document.querySelector('#footer'));
+renderHtml(document.querySelector('#navbar'), navbarHtml);
+renderHtml(document.querySelector('#hero'), heroHtml);
+renderHtml(document.querySelector('#features'), featuresHtml);
+renderHtml(document.querySelector('#footer'), footerHtml);
+
 initAnimations();
