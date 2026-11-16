@@ -1,7 +1,7 @@
 import './style.css';
 import navbarHtml from './components/Navbar.html?raw';
-import heroHtml from './components/Hero.html?raw';
-import featuresHtml from './components/Features.html?raw';
+import heroHtml from './components/Inici/Hero.html?raw';
+import featuresHtml from './components/Inici/Features.html?raw';
 import footerHtml from './components/Footer.html?raw';
 import { initAnimations } from './animations.js';
 
