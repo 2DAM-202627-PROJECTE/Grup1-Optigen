@@ -10,7 +10,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        funcionalitats: 'indexFuncionalitats.html',
+        indexInici: 'indexInici.html',
+        indexFuncionalitats: 'indexFuncionalitats.html',
+        indexCookies: 'indexCookies.html',
       },
     },
   },
