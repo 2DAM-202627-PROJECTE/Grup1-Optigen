@@ -1,16 +1,9 @@
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
-import { resolve } from 'node:path';
-import { mountApi } from './server/routes.js';
-
-const newsletterDbPath = resolve(process.env.NEWSLETTER_DB_PATH || '.optigen-data/newsletter.sqlite');
-
-function mountViteApi(server) {
-  server.middlewares.use(mountApi(server.config.base));
-}
 
 export default defineConfig({
   base: '/Grup1-Optigen/',
+  // Keep private local archives outside Vite’s file serving.
   server: {
     fs: {
       deny: [
@@ -19,19 +12,10 @@ export default defineConfig({
         '*.{crt,pem}',
         '**/.git/**',
         '**/.optigen-data/**',
-        newsletterDbPath,
-        `${newsletterDbPath}-*`,
       ],
     },
   },
-  plugins: [
-    tailwindcss(),
-    {
-      name: 'optigen-api',
-      configureServer: mountViteApi,
-      configurePreviewServer: mountViteApi,
-    },
-  ],
+  plugins: [tailwindcss()],
   build: {
     rollupOptions: {
       input: {

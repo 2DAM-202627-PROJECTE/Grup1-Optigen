@@ -79,3 +79,17 @@
 .legal-page dt {
   @apply mt-3 font-bold text-white first:mt-0;
 }
+
+[data-fs-error]:not([data-fs-active]),
+[data-fs-success]:not([data-fs-active]),
+form:not([aria-busy="true"]) [data-formspree-sending] {
+  display: none;
+}
+
+.form-field-error {
+  @apply text-xs font-normal normal-case tracking-normal text-[#ffc29d];
+}
+
+[data-fs-field][aria-invalid="true"] {
+  @apply border-[#ffc29d];
+}

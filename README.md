@@ -311,89 +311,21 @@ Les funcionalitats exactes incloses en cada pla es definiran durant el desenvolu
 
 **GitHub:** [UrlRepositori](https://github.com/2DAM-202627-PROJECTE/Grup1)
 
-## Newsletter i formulari de contacte en producció
+## Formularis de contacte i newsletter
 
-GitHub Pages publica la landing. Un servei Node amb HTTPS atén els formularis.
-L'alta a la newsletter desa el correu, la data i la versió del consentiment a
-SQLite. Una alta repetida conserva el registre original.
+Els formularis de la landing utilitzen la biblioteca AJAX de Formspree, disponible
+amb el pla gratuït. Cada formulari té el seu propi endpoint.
 
-### 1. Publica l'API
+- Contacte · `https://formspree.io/f/mvkaqdjv`
+- Newsletter · `https://formspree.io/f/xjywojqq`
 
-Puja els canvis a la branca que utilitzes per desplegar. Pots fer servir un
-servidor Node que ja tinguis o crear un **Web Service** a Render connectat al
-repositori. A Render, tria el runtime **Node**, la branca `main` i aquests valors.
+1. A Formspree, obre cadascun dels formularis i comprova el destinatari a
+   **Workflow → Actions → Email → Settings**.
+2. A l'arrel del projecte, executa `npm ci` i `npm run build`. Executa
+   `npm run preview` i obre la URL que mostra Vite per provar la versió compilada.
+3. Publica amb el workflow **Deploy static content to Pages**. A la web
+   publicada, fes un enviament de prova per formulari i comprova que apareix a
+   **Submissions** i que la notificació arriba a la bústia configurada.
 
-| Camp de Render | Valor |
-| --- | --- |
-| Build Command | `npm ci` |
-| Start Command | `npm run start:api` |
-| Health Check Path | `/healthz` |
-| Persistent Disk | Munta'l a `/var/data`. Render requereix un pla de pagament per afegir-lo. |
-
-Configura aquestes variables al servei Node.
-
-| Variable | Valor |
-| --- | --- |
-| `NODE_VERSION` | `24.22.1` a Render o una versió de Node 24 o posterior al teu servidor |
-| `API_ALLOWED_ORIGIN` | L'origen exacte que mostra **Settings → Pages**. Si l'URL és `https://2dam-202627-projecte.github.io/Grup1-Optigen/`, posa `https://2dam-202627-projecte.github.io`. |
-| `NEWSLETTER_DB_PATH` | `/var/data/optigen/newsletter.sqlite` si el disc està muntat a `/var/data` |
-
-El procés utilitza el `PORT` del proveïdor o el port 3000. Comprova que
-`https://EL-TEU-SERVEI.onrender.com/healthz` respon `ok`.
-
-[Serveis web a Render](https://render.com/docs/web-services) ·
-[Discs persistents](https://render.com/docs/disks) ·
-[Versió de Node](https://render.com/docs/node-version)
-
-### 2. Configura el correu del formulari de contacte
-
-Verifica a Resend un domini o subdomini del qual puguis modificar el DNS.
-Crea una clau amb permís d'enviament i configura aquestes variables al **servei
-Node**. L'API usa l'adreça del formulari com a adreça de resposta.
-
-| Variable | Valor |
-| --- | --- |
-| `CONTACT_RESEND_API_KEY` | La clau privada de Resend. Desa-la només a l'entorn del servidor. |
-| `CONTACT_FROM` | Remitent del domini verificat, per exemple `OptiGen <contacte@correu.el-teu-domini.cat>` |
-| `CONTACT_TO` | Destinataris separats per comes, per exemple `davidstaicu@iesebre.com,xaviersans@iesebre.com` |
-
-Pots completar l'alta de la newsletter abans de configurar Resend, ja que el
-registre només necessita l'API i el disc. Abans d'obrir el servei al públic,
-actualitza els textos legals amb la identificació del titular i del responsable,
-els proveïdors definitius i les garanties de transferència que corresponguin.
-
-[Verificació del domini a Resend](https://resend.com/docs/dashboard/domains/introduction) ·
-[Enviament de correu a Resend](https://resend.com/docs/api-reference/emails/send-email)
-
-### 3. Connecta GitHub Pages i comprova els formularis
-
-1. A GitHub, obre **Settings → Secrets and variables → Actions → Variables → New repository variable**.
-2. Crea `VITE_NEWSLETTER_ENDPOINT` amb `https://EL-TEU-SERVEI.onrender.com/api/newsletter`.
-   Per al contacte, crea `VITE_CONTACT_ENDPOINT` amb `https://EL-TEU-SERVEI.onrender.com/api/contact`.
-3. A **Actions → Deploy static content to Pages**, executa **Run workflow**
-   a `main` perquè el build incorpori les variables.
-4. Obre la landing pública i registra una adreça de prova. Hauries de veure
-   la confirmació. Al terminal del servidor pots verificar el recompte
-   abans i després de l'alta amb l'ordre següent. Repeteix l'alta amb la
-   mateixa adreça i comprova que el recompte es manté.
-5. Envia una consulta de prova des de la landing quan hagis configurat Resend.
-   Comprova l'arribada a la bústia i que el botó de resposta apunta al correu del formulari.
-
-```bash
-node --input-type=module -e 'import { DatabaseSync } from "node:sqlite"; const db = new DatabaseSync(process.env.NEWSLETTER_DB_PATH, { readOnly: true }); console.log(db.prepare("SELECT COUNT(*) AS total FROM newsletter_subscriptions").get()); db.close()'
-```
-
-[Variables de GitHub Actions](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables)
-
-La taula privada `newsletter_subscriptions` conté les altes. Per tramitar una
-baixa demanada per correu, elimina el registre de l'adreça a la base de dades
-de producció. Fes servir la llista com a font de destinataris per als enviaments
-del butlletí i inclou-hi la via de baixa indicada a la política de privacitat.
-
-### Proves locals
-
-`npm run dev` i `npm run preview` serveixen els dos endpoints localment. Per
-defecte, SQLite es desa a `.optigen-data/newsletter.sqlite`. Si vols fer un
-enviament real del formulari en local, exporta les tres variables
-`CONTACT_…` a l'entorn des del qual arrenques Vite. En local, apunta
-`CONTACT_TO` a una bústia de proves.
+[Documentació de Formspree AJAX](https://help.formspree.io/articles/building-your-form/submit-forms-with-javascript-ajax/) ·
+[Destinataris de notificacions](https://help.formspree.io/articles/form-and-project-settings/changing-a-form-email-address)
