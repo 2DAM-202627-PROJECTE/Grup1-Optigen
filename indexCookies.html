@@ -1,21 +1,46 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<!doctype html>
+<html lang="ca">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Cookies | OptiGen</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de cookies | OptiGen</title>
 </head>
-
 <body class="m-0 bg-[#080b10] font-[Arial,Helvetica,sans-serif] text-[#f5f5f2]">
-  <div class="min-h-screen bg-[#080b10]">
-    <div id="navbar"></div>
-    <main>
-      <div id="cookies"></div>
-    </main>
-    <div id="footer"></div>
-  </div>
-  <script type="module" src="/src/Cookies.js"></script>
-</body>
+  <div id="navbar"></div>
+  <main class="legal-page">
+    <h1>Política de cookies</h1>
+    <p>Les cookies són fitxers petits que el navegador desa al dispositiu. Aquesta landing d'OptiGen utilitza una cookie pròpia per recordar les teves preferències de privacitat.</p>
 
+    <section aria-labelledby="cookie-inventory">
+      <h2 id="cookie-inventory">Cookie que utilitza la landing</h2>
+      <dl class="border border-[#33404d] bg-[#101923] p-5">
+        <dt>Nom</dt>
+        <dd><code>optigen_cookie_consent</code></dd>
+        <dt>Proveïdor i tipus</dt>
+        <dd>OptiGen, tècnica i pròpia.</dd>
+        <dt>Finalitat</dt>
+        <dd>Recordar si permets o rebutges les cookies opcionals i aplicar la teva tria quan tornis a la landing.</dd>
+        <dt>Durada</dt>
+        <dd>365 dies des de l'última vegada que deses la tria.</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Cookies opcionals i serveis externs</h2>
+      <p>La landing actualment no instal·la cookies analítiques, de publicitat ni de xarxes socials. Si permets les analítiques, només es desa la preferència. Si incorporem eines que facin servir cookies opcionals, actualitzarem aquesta política i demanarem consentiment abans d'activar-les.</p>
+      <p>Els enllaços a serveis externs, com ara Instagram i X, obren webs amb les seves pròpies polítiques.</p>
+    </section>
+
+    <section>
+      <h2>Canvia o retira el consentiment</h2>
+      <p>Pots acceptar les opcionals, rebutjar-les o revisar la selecció en qualsevol moment. També pots eliminar la cookie d'OptiGen des dels ajustos de privacitat del navegador. Si l'elimines o caduca, et tornarem a demanar la tria.</p>
+      <button class="border border-[#f47b20] px-4 py-3 font-bold text-[#f47b20] hover:bg-[#151f2b]" type="button" data-cookie-settings>Configura les cookies</button>
+    </section>
+
+    <p>Si tens cap consulta sobre privacitat, pots escriure a <a href="mailto:davidstaicu@iesebre.com">davidstaicu@iesebre.com</a> o consultar la <a href="./indexPrivacitat.html" target="_blank" rel="noopener noreferrer">política de privacitat</a>.</p>
+    <p class="text-sm">Darrera actualització el 19 de novembre de 2026.</p>
+  </main>
+  <div id="footer"></div>
+  <script type="module" src="/src/Legal.js"></script>
+</body>
 </html>
