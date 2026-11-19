@@ -51,3 +51,31 @@
 .social-icon--x::after {
   transform: rotate(-45deg);
 }
+
+.legal-page {
+  @apply mx-auto max-w-4xl px-5 py-12 text-[#b2bac4] sm:px-8 sm:py-20;
+}
+
+.legal-page h1 {
+  @apply mb-7 text-[clamp(2.25rem,6vw,4.5rem)] leading-tight font-bold text-white;
+}
+
+.legal-page h2 {
+  @apply mb-3 text-2xl font-bold text-white;
+}
+
+.legal-page section {
+  @apply mt-8 border-t border-[#33404d] pt-6;
+}
+
+.legal-page p {
+  @apply my-4 leading-relaxed;
+}
+
+.legal-page a {
+  @apply text-[#f47b20] underline hover:text-white;
+}
+
+.legal-page dt {
+  @apply mt-3 font-bold text-white first:mt-0;
+}

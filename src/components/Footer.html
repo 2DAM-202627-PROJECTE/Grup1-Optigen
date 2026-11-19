@@ -71,20 +71,19 @@
         Explica'ns què necessites i et respondrem tan aviat com puguem.
       </p>
 
-      <form class="mt-4 grid grid-cols-2 gap-3 max-[700px]:grid-cols-1"
-        action="mailto:davidstaicu@iesebre.com,xaviersans@iesebre.com" method="post" enctype="text/plain">
+      <form class="mt-4 grid grid-cols-2 gap-3 max-[700px]:grid-cols-1" data-contact method="post">
         <label class="flex flex-col gap-1 text-[.62rem] uppercase tracking-[.1em] text-[#788492]" for="name">
           Nom
           <input
             class="min-w-0 border border-[#33404d] bg-[#101923] p-3 text-[.78rem] normal-case tracking-normal text-white outline-none transition-colors placeholder:text-[#667381] focus:border-[#f47b20]"
-            id="name" name="name" type="text" placeholder="El teu nom" autocomplete="name" required />
+            id="name" name="name" type="text" placeholder="El teu nom" autocomplete="name" maxlength="100" required />
         </label>
 
         <label class="flex flex-col gap-1 text-[.62rem] uppercase tracking-[.1em] text-[#788492]" for="email">
           Correu electrònic
           <input
             class="min-w-0 border border-[#33404d] bg-[#101923] p-3 text-[.78rem] normal-case tracking-normal text-white outline-none transition-colors placeholder:text-[#667381] focus:border-[#f47b20]"
-            id="email" name="email" type="email" placeholder="tu@exemple.cat" autocomplete="email" required />
+            id="email" name="email" type="email" placeholder="tu@exemple.cat" autocomplete="email" maxlength="254" required />
         </label>
 
         <label
@@ -93,7 +92,7 @@
           Assumpte
           <input
             class="min-w-0 border border-[#33404d] bg-[#101923] p-3 text-[.78rem] normal-case tracking-normal text-white outline-none transition-colors placeholder:text-[#667381] focus:border-[#f47b20]"
-            id="subject" name="subject" type="text" placeholder="Com et podem ajudar?" required />
+            id="subject" name="subject" type="text" placeholder="Com et podem ajudar?" maxlength="150" required />
         </label>
 
         <label
@@ -102,14 +101,20 @@
           Missatge
           <textarea
             class="min-h-[84px] resize-y border border-[#33404d] bg-[#101923] p-3 text-[.78rem] normal-case tracking-normal text-white outline-none transition-colors placeholder:text-[#667381] focus:border-[#f47b20]"
-            id="message" name="message" placeholder="Descriu breument la teva consulta..." rows="3" required></textarea>
+            id="message" name="message" placeholder="Descriu breument la teva consulta..." rows="3" maxlength="4000" required></textarea>
         </label>
 
+        <p class="col-span-full text-[.75rem] leading-relaxed text-[#9da5ae]">
+          Tractem les teves dades per respondre la consulta. Consulta la
+          <a class="text-[#f47b20] underline" href="./indexPrivacitat.html#contacte" target="_blank" rel="noopener noreferrer">política de privacitat</a>.
+        </p>
+
         <button
-          class="col-span-2 justify-self-start border-0 bg-[#f47b20] px-5 py-[.8rem] text-[.78rem] font-bold text-[#080b10] transition-colors hover:bg-[#ff9140] max-[700px]:col-span-1"
+          class="col-span-full justify-self-start border-0 bg-[#f47b20] px-5 py-[.8rem] text-[.78rem] font-bold text-[#080b10] transition-colors hover:bg-[#ff9140] disabled:cursor-wait disabled:opacity-60"
           type="submit">
           Envia el missatge →
         </button>
+        <p class="col-span-full min-h-[1.25rem] text-sm text-[#9da5ae]" role="status"></p>
       </form>
     </div>
 
@@ -123,21 +128,30 @@
         Rep les novetats i actualitzacions d'OptiGen.
       </p>
 
-      <form class="mt-4 flex flex-col gap-3" action="mailto:davidstaicu@iesebre.com,xaviersans@iesebre.com"
-        method="post" enctype="text/plain">
+      <form class="mt-4 flex flex-col gap-3" data-newsletter method="post">
         <label class="flex flex-col gap-1 text-[.62rem] uppercase tracking-[.1em] text-[#788492]"
           for="newsletter-email">
           Correu electrònic
           <input
             class="min-w-0 border border-[#33404d] bg-[#101923] p-3 text-[.78rem] normal-case tracking-normal text-white outline-none transition-colors placeholder:text-[#667381] focus:border-[#f47b20]"
             id="newsletter-email" name="email" type="email" placeholder="El teu correu electrònic" autocomplete="email"
-            required />
+            maxlength="254" required />
         </label>
+        <label class="flex items-start gap-2 text-[.8rem] leading-relaxed text-[#9da5ae]">
+          <input class="mt-1 accent-[#f47b20]" name="consent" type="checkbox" required />
+          Vull rebre per correu les novetats d'OptiGen.
+        </label>
+        <p class="text-[.75rem] leading-relaxed text-[#9da5ae]">
+          L'equip d'OptiGen fa servir el teu correu per gestionar la subscripció.
+          Pots donar-te de baixa escrivint a l'equip. Consulta la
+          <a class="text-[#f47b20] underline" href="./indexPrivacitat.html#newsletter" target="_blank" rel="noopener noreferrer">política de privacitat</a>.
+        </p>
         <button
-          class="self-start border-0 bg-[#f47b20] px-5 py-[.8rem] text-[.78rem] font-bold text-[#080b10] transition-colors hover:bg-[#ff9140]"
+          class="self-start border-0 bg-[#f47b20] px-5 py-[.8rem] text-[.78rem] font-bold text-[#080b10] transition-colors hover:bg-[#ff9140] disabled:cursor-wait disabled:opacity-60"
           type="submit">
           Subscriu-me →
         </button>
+        <p class="min-h-[1.25rem] text-sm text-[#9da5ae]" role="status"></p>
       </form>
     </div>
 
@@ -147,12 +161,15 @@
   <div
     class="mt-12 flex justify-between border-t border-[#33404d] pt-4 text-[.7rem] text-[#9da5ae] max-[700px]:flex-wrap max-[700px]:gap-3">
     <span>
-      © ${new Date().getFullYear()} OptiGen
+      © <span data-footer-year></span> OptiGen
     </span>
 
-    <a class="no-underline hover:text-white" href="./indexCookies.html">
-      Política de Cookies
-    </a>
+    <nav class="flex flex-wrap gap-x-4 gap-y-2" aria-label="Informació legal">
+      <a class="hover:text-white" href="./indexAvisLegal.html" target="_blank" rel="noopener noreferrer">Avís legal</a>
+      <a class="hover:text-white" href="./indexPrivacitat.html" target="_blank" rel="noopener noreferrer">Política de privacitat</a>
+      <a class="hover:text-white" href="./indexCookies.html" target="_blank" rel="noopener noreferrer">Política de cookies</a>
+      <button class="hover:text-white" type="button" data-cookie-settings>Configura les cookies</button>
+    </nav>
 
     <span>
       MENU ↑
