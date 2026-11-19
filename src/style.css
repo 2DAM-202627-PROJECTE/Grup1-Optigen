@@ -53,16 +53,60 @@
   transform: rotate(-45deg);
 }
 
-.legal-page {
-  @apply mx-auto max-w-4xl px-5 py-12 text-[#b2bac4] sm:px-8 sm:py-20;
-}
-
+/* Shared typography and spacing, based on the home page. */
+.page-title,
 .legal-page h1 {
-  @apply mb-7 text-[clamp(2.25rem,6vw,4.5rem)] leading-tight font-bold text-white;
+  @apply text-[clamp(2.7rem,7vw,6.5rem)] leading-[.96] font-bold text-white;
 }
 
+.section-title {
+  @apply text-[clamp(1.5rem,3vw,2.25rem)] leading-tight font-semibold uppercase tracking-tight text-white;
+}
+
+.card-title,
 .legal-page h2 {
-  @apply mb-3 text-2xl font-bold text-white;
+  @apply text-lg leading-snug font-semibold text-white;
+}
+
+.lead-copy {
+  @apply text-base leading-[1.6] text-[#9da5ae];
+}
+
+.body-copy,
+.legal-page p {
+  @apply text-sm leading-[1.7] text-[#9da5ae];
+}
+
+.eyebrow {
+  @apply text-[.72rem] font-medium uppercase tracking-[.16em] text-[#f47b20];
+}
+
+.section-space {
+  @apply py-14 sm:py-20;
+}
+
+.button {
+  @apply inline-flex min-h-12 cursor-pointer items-center justify-center rounded-lg border px-6 text-sm font-semibold no-underline transition duration-200 motion-reduce:transition-none;
+}
+
+.button-primary {
+  @apply border-transparent bg-[#f47b20] text-[#080b10] enabled:hover:brightness-110 enabled:hover:shadow-[0_0_18px_#f47b2040] disabled:cursor-wait disabled:opacity-60;
+}
+
+a.button-primary:hover {
+  @apply brightness-110 shadow-[0_0_18px_#f47b2040];
+}
+
+.button-outline {
+  @apply border-[#33404d] bg-transparent text-[#f5f5f2] hover:border-[#f47b20] hover:text-[#f47b20];
+}
+
+.button-compact {
+  @apply min-h-10 px-5;
+}
+
+.legal-page {
+  @apply mx-auto max-w-4xl px-5 py-14 text-[#9da5ae] sm:px-8 sm:py-20;
 }
 
 .legal-page section {
@@ -70,10 +114,15 @@
 }
 
 .legal-page p {
-  @apply my-4 leading-relaxed;
+  @apply my-4;
 }
 
-.legal-page a {
+.small-copy,
+.legal-page .small-copy {
+  @apply text-xs leading-relaxed text-[#9da5ae];
+}
+
+.legal-page a:not(.button) {
   @apply text-[#f47b20] underline hover:text-white;
 }
 

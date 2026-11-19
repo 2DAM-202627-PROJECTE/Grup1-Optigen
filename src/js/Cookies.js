@@ -8,8 +8,8 @@ const defaultPreferences = {
   version: COOKIE_VERSION,
 };
 
-const choiceClass = 'border border-[#f47b20] bg-[#f47b20] px-4 py-3 text-xs font-bold text-[#080b10] hover:bg-[#ff9140]';
-const settingsClass = 'border border-[#33404d] px-4 py-3 text-xs font-bold text-white hover:border-white';
+const choiceClass = 'button button-primary button-compact';
+const settingsClass = 'button button-outline button-compact';
 const errorMarkup = `<p hidden class="mt-3 text-sm text-[#ffc29d]" data-cookie-error role="status"></p>`;
 
 function getPreferences() {

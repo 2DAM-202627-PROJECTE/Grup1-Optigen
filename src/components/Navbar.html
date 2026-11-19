@@ -30,8 +30,17 @@
     </a>
   </div>
 
-  <a class="rounded-full border border-black px-5 py-[.8rem] bg-[#f47b20] text-[.78rem] text-black no-underline transition-colors hover:border-[#ffffff] hover:bg-[#080b10] hover:text-[#f47b20] max-[700px]:ml-auto"
-    href="#contact">
+  <button class="button button-primary button-compact max-[700px]:ml-auto"
+    type="button" popovertarget="configuration-notice">
     Iniciar configuració
-  </a>
+  </button>
+
+  <div id="configuration-notice" popover="auto"
+    class="fixed inset-0 m-auto h-fit w-fit rounded-xl border border-[#33404d] bg-[#101923] px-6 py-4 text-[#f5f5f2] shadow-xl">
+    <div class="flex items-center gap-6">
+      <p class="text-sm font-semibold">Proximament!</p>
+      <button type="button" popovertarget="configuration-notice" popovertargetaction="hide"
+        class="px-2 py-1 text-lg leading-none text-[#9da5ae] hover:text-white" aria-label="Tanca l'avís">×</button>
+    </div>
+  </div>
 </nav>
