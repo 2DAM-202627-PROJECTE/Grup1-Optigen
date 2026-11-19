@@ -4,6 +4,7 @@ import footerHtml from '../components/Footer.html?raw';
 import { initAnimations } from './animations.js';
 import { initCookieConsent } from './Cookies.js';
 import { initForms } from './forms.js';
+import { initFaq } from './faq.js';
 
 function markCurrentPage(navbar) {
   const filename = window.location.pathname.split('/').at(-1);
@@ -41,6 +42,7 @@ export function initSite() {
   markCurrentPage(navbar);
   initForms();
   initCookieConsent();
+  initFaq();
   const lenis = initAnimations();
   initBackToTop(footer.querySelector('[data-back-to-top]'), navbar.querySelector('a'), lenis);
 }

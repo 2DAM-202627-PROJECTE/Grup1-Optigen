@@ -165,3 +165,39 @@ form:not([aria-busy="true"]) [data-formspree-sending] {
     transition: none;
   }
 }
+
+.faq-cards {
+  @apply overflow-hidden rounded-xl border border-[#33404d] bg-[#141e2a];
+}
+
+.faq-cards > details + details {
+  @apply border-t border-[#33404d];
+}
+
+.faq-summary {
+  @apply flex cursor-pointer list-none items-center gap-5 px-6 py-6 marker:content-none;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-number {
+  @apply font-mono text-xs text-[#9da5ae];
+}
+
+.faq-question {
+  @apply flex-1 text-base font-medium text-white transition-colors sm:text-lg;
+}
+
+details[open] > .faq-summary .faq-question {
+  @apply text-[#f47b20];
+}
+
+.faq-toggle {
+  @apply text-xl text-[#f47b20];
+}
+
+.faq-answer-copy {
+  @apply px-6 pb-6 pl-[4.25rem] text-sm leading-[1.8] text-[#9da5ae];
+}

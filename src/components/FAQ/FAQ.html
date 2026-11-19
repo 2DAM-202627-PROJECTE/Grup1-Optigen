@@ -51,39 +51,49 @@
                     01 / General
                 </p>
 
-                <details name="faq"
-                    class="group border-t border-[#33404d] [interpolate-size:allow-keywords] [&::details-content]:[block-size:0] [&::details-content]:overflow-clip [&::details-content]:[transition:block-size_0.4s_ease,content-visibility_0.4s_allow-discrete] [&[open]::details-content]:[block-size:auto]">
-                    <summary
-                        class="flex cursor-pointer list-none items-center gap-6 py-6 [&::-webkit-details-marker]:hidden">
-                        <span class="flex-1 text-base font-medium group-open:text-[#f47b20] sm:text-lg">
-                            Què és Optigen?
-                        </span>
-                        <span class="text-xl text-[#9da5ae] group-open:hidden">+</span>
-                        <span class="hidden text-xl text-[#f47b20] group-open:inline">×</span>
-                    </summary>
-                    <p class="body-copy pb-6 pr-6">
-                        Optigen és una plataforma web que permet preparar scripts d'optimització personalitzats per al
-                        teu ordinador. Mitjançant un configurador guiat, pots seleccionar el teu sistema operatiu, el
-                        maquinari i les optimitzacions que vols incloure.
-                    </p>
-                </details>
+                <div class="faq-cards">
+                    <details name="faq" class="group">
+                        <summary
+                            class="faq-summary">
+                            <span class="faq-number" aria-hidden="true">01</span>
+                            <span class="faq-question">
+                                Què és Optigen?
+                            </span>
+                            <span class="faq-toggle group-open:hidden" aria-hidden="true">+</span>
+                            <span class="faq-toggle hidden group-open:inline" aria-hidden="true">×</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <div class="faq-answer-copy">
+                                <p>
+                                    Optigen és una plataforma web que permet preparar scripts d'optimització personalitzats per al
+                                    teu ordinador. Mitjançant un configurador guiat, pots seleccionar el teu sistema operatiu, el
+                                    maquinari i les optimitzacions que vols incloure.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
 
-                <details name="faq"
-                    class="group border-y border-[#33404d] [interpolate-size:allow-keywords] [&::details-content]:[block-size:0] [&::details-content]:overflow-clip [&::details-content]:[transition:block-size_0.4s_ease,content-visibility_0.4s_allow-discrete] [&[open]::details-content]:[block-size:auto]">
-                    <summary
-                        class="flex cursor-pointer list-none items-center gap-6 py-6 [&::-webkit-details-marker]:hidden">
-                        <span class="flex-1 text-base font-medium group-open:text-[#f47b20] sm:text-lg">
-                            Com funciona la plataforma?
-                        </span>
-                        <span class="text-xl text-[#9da5ae] group-open:hidden">+</span>
-                        <span class="hidden text-xl text-[#f47b20] group-open:inline">×</span>
-                    </summary>
-                    <p class="body-copy pb-6 pr-6">
-                        Selecciona el teu sistema operatiu, indica els components del teu ordinador, tria un perfil
-                        d'optimització i decideix quins canvis vols incloure. Després de revisar la configuració, podràs
-                        generar i descarregar el teu script personalitzat.
-                    </p>
-                </details>
+                    <details name="faq" class="group">
+                        <summary
+                            class="faq-summary">
+                            <span class="faq-number" aria-hidden="true">02</span>
+                            <span class="faq-question">
+                                Com funciona la plataforma?
+                            </span>
+                            <span class="faq-toggle group-open:hidden" aria-hidden="true">+</span>
+                            <span class="faq-toggle hidden group-open:inline" aria-hidden="true">×</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <div class="faq-answer-copy">
+                                <p>
+                                    Selecciona el teu sistema operatiu, indica els components del teu ordinador, tria un perfil
+                                    d'optimització i decideix quins canvis vols incloure. Després de revisar la configuració, podràs
+                                    generar i descarregar el teu script personalitzat.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
             </div>
 
             <div id="faq-compatibilitat" class="mt-12 scroll-mt-28">
@@ -91,54 +101,68 @@
                     02 / Compatibilitat i scripts
                 </p>
 
-                <details name="faq"
-                    class="group border-t border-[#33404d] [interpolate-size:allow-keywords] [&::details-content]:[block-size:0] [&::details-content]:overflow-clip [&::details-content]:[transition:block-size_0.4s_ease,content-visibility_0.4s_allow-discrete] [&[open]::details-content]:[block-size:auto]">
-                    <summary
-                        class="flex cursor-pointer list-none items-center gap-6 py-6 [&::-webkit-details-marker]:hidden">
-                        <span class="flex-1 text-base font-medium group-open:text-[#f47b20] sm:text-lg">
-                            Quins sistemes operatius són compatibles?
-                        </span>
-                        <span class="text-xl text-[#9da5ae] group-open:hidden">+</span>
-                        <span class="hidden text-xl text-[#f47b20] group-open:inline">×</span>
-                    </summary>
-                    <p class="body-copy pb-6 pr-6">
-                        Optigen està dissenyat per a Windows i Ubuntu. Les optimitzacions i el tipus de script generat
-                        s'adapten al sistema operatiu seleccionat.
-                    </p>
-                </details>
+                <div class="faq-cards">
+                    <details name="faq" class="group">
+                        <summary
+                            class="faq-summary">
+                            <span class="faq-number" aria-hidden="true">03</span>
+                            <span class="faq-question">
+                                Quins sistemes operatius són compatibles?
+                            </span>
+                            <span class="faq-toggle group-open:hidden" aria-hidden="true">+</span>
+                            <span class="faq-toggle hidden group-open:inline" aria-hidden="true">×</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <div class="faq-answer-copy">
+                                <p>
+                                    Optigen està dissenyat per a Windows i Ubuntu. Les optimitzacions i el tipus de script generat
+                                    s'adapten al sistema operatiu seleccionat.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
 
-                <details name="faq"
-                    class="group border-t border-[#33404d] [interpolate-size:allow-keywords] [&::details-content]:[block-size:0] [&::details-content]:overflow-clip [&::details-content]:[transition:block-size_0.4s_ease,content-visibility_0.4s_allow-discrete] [&[open]::details-content]:[block-size:auto]">
-                    <summary
-                        class="flex cursor-pointer list-none items-center gap-6 py-6 [&::-webkit-details-marker]:hidden">
-                        <span class="flex-1 text-base font-medium group-open:text-[#f47b20] sm:text-lg">
-                            Quins tipus de scripts genera?
-                        </span>
-                        <span class="text-xl text-[#9da5ae] group-open:hidden">+</span>
-                        <span class="hidden text-xl text-[#f47b20] group-open:inline">×</span>
-                    </summary>
-                    <p class="body-copy pb-6 pr-6">
-                        Per a Windows genera scripts PowerShell amb extensió .ps1 i per a Ubuntu genera scripts Bash amb
-                        extensió .sh. Cada fitxer conté les optimitzacions que has seleccionat durant la configuració.
-                    </p>
-                </details>
+                    <details name="faq" class="group">
+                        <summary
+                            class="faq-summary">
+                            <span class="faq-number" aria-hidden="true">04</span>
+                            <span class="faq-question">
+                                Quins tipus de scripts genera?
+                            </span>
+                            <span class="faq-toggle group-open:hidden" aria-hidden="true">+</span>
+                            <span class="faq-toggle hidden group-open:inline" aria-hidden="true">×</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <div class="faq-answer-copy">
+                                <p>
+                                    Per a Windows genera scripts PowerShell amb extensió .ps1 i per a Ubuntu genera scripts Bash amb
+                                    extensió .sh. Cada fitxer conté les optimitzacions que has seleccionat durant la configuració.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
 
-                <details name="faq"
-                    class="group border-y border-[#33404d] [interpolate-size:allow-keywords] [&::details-content]:[block-size:0] [&::details-content]:overflow-clip [&::details-content]:[transition:block-size_0.4s_ease,content-visibility_0.4s_allow-discrete] [&[open]::details-content]:[block-size:auto]">
-                    <summary
-                        class="flex cursor-pointer list-none items-center gap-6 py-6 [&::-webkit-details-marker]:hidden">
-                        <span class="flex-1 text-base font-medium group-open:text-[#f47b20] sm:text-lg">
-                            Com puc executar el script generat?
-                        </span>
-                        <span class="text-xl text-[#9da5ae] group-open:hidden">+</span>
-                        <span class="hidden text-xl text-[#f47b20] group-open:inline">×</span>
-                    </summary>
-                    <p class="body-copy pb-6 pr-6">
-                        Un cop descarregat, pots revisar el contingut del script abans d'executar-lo localment. A
-                        Windows pots fer servir PowerShell i a Ubuntu el terminal Bash. Es recomana fer una còpia de
-                        seguretat abans d'aplicar canvis al sistema.
-                    </p>
-                </details>
+                    <details name="faq" class="group">
+                        <summary
+                            class="faq-summary">
+                            <span class="faq-number" aria-hidden="true">05</span>
+                            <span class="faq-question">
+                                Com puc executar el script generat?
+                            </span>
+                            <span class="faq-toggle group-open:hidden" aria-hidden="true">+</span>
+                            <span class="faq-toggle hidden group-open:inline" aria-hidden="true">×</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <div class="faq-answer-copy">
+                                <p>
+                                    Un cop descarregat, pots revisar el contingut del script abans d'executar-lo localment. A
+                                    Windows pots fer servir PowerShell i a Ubuntu el terminal Bash. Es recomana fer una còpia de
+                                    seguretat abans d'aplicar canvis al sistema.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
             </div>
 
             <div id="faq-configuracio" class="mt-12 scroll-mt-28">
@@ -146,37 +170,47 @@
                     03 / Configuració
                 </p>
 
-                <details name="faq"
-                    class="group border-t border-[#33404d] [interpolate-size:allow-keywords] [&::details-content]:[block-size:0] [&::details-content]:overflow-clip [&::details-content]:[transition:block-size_0.4s_ease,content-visibility_0.4s_allow-discrete] [&[open]::details-content]:[block-size:auto]">
-                    <summary
-                        class="flex cursor-pointer list-none items-center gap-6 py-6 [&::-webkit-details-marker]:hidden">
-                        <span class="flex-1 text-base font-medium group-open:text-[#f47b20] sm:text-lg">
-                            Quins perfils d'optimització hi ha?
-                        </span>
-                        <span class="text-xl text-[#9da5ae] group-open:hidden">+</span>
-                        <span class="hidden text-xl text-[#f47b20] group-open:inline">×</span>
-                    </summary>
-                    <p class="body-copy pb-6 pr-6">
-                        Pots triar entre els perfils Rendiment, Equilibrat, Neteja, Gaming i Personalitzat. Cada perfil
-                        està orientat a diferents necessitats i formes d'utilitzar l'ordinador.
-                    </p>
-                </details>
+                <div class="faq-cards">
+                    <details name="faq" class="group">
+                        <summary
+                            class="faq-summary">
+                            <span class="faq-number" aria-hidden="true">06</span>
+                            <span class="faq-question">
+                                Quins perfils d'optimització hi ha?
+                            </span>
+                            <span class="faq-toggle group-open:hidden" aria-hidden="true">+</span>
+                            <span class="faq-toggle hidden group-open:inline" aria-hidden="true">×</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <div class="faq-answer-copy">
+                                <p>
+                                    Pots triar entre els perfils Rendiment, Equilibrat, Neteja, Gaming i Personalitzat. Cada perfil
+                                    està orientat a diferents necessitats i formes d'utilitzar l'ordinador.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
 
-                <details name="faq"
-                    class="group border-y border-[#33404d] [interpolate-size:allow-keywords] [&::details-content]:[block-size:0] [&::details-content]:overflow-clip [&::details-content]:[transition:block-size_0.4s_ease,content-visibility_0.4s_allow-discrete] [&[open]::details-content]:[block-size:auto]">
-                    <summary
-                        class="flex cursor-pointer list-none items-center gap-6 py-6 [&::-webkit-details-marker]:hidden">
-                        <span class="flex-1 text-base font-medium group-open:text-[#f47b20] sm:text-lg">
-                            Puc seleccionar manualment les optimitzacions?
-                        </span>
-                        <span class="text-xl text-[#9da5ae] group-open:hidden">+</span>
-                        <span class="hidden text-xl text-[#f47b20] group-open:inline">×</span>
-                    </summary>
-                    <p class="body-copy pb-6 pr-6">
-                        Sí, pots activar o desactivar manualment les optimitzacions disponibles. Abans de generar el
-                        script podràs revisar tots els canvis seleccionats.
-                    </p>
-                </details>
+                    <details name="faq" class="group">
+                        <summary
+                            class="faq-summary">
+                            <span class="faq-number" aria-hidden="true">07</span>
+                            <span class="faq-question">
+                                Puc seleccionar manualment les optimitzacions?
+                            </span>
+                            <span class="faq-toggle group-open:hidden" aria-hidden="true">+</span>
+                            <span class="faq-toggle hidden group-open:inline" aria-hidden="true">×</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <div class="faq-answer-copy">
+                                <p>
+                                    Sí, pots activar o desactivar manualment les optimitzacions disponibles. Abans de generar el
+                                    script podràs revisar tots els canvis seleccionats.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
             </div>
 
             <div id="faq-seguretat" class="mt-12 scroll-mt-28">
@@ -184,55 +218,69 @@
                     04 / Seguretat i control
                 </p>
 
-                <details name="faq"
-                    class="group border-t border-[#33404d] [interpolate-size:allow-keywords] [&::details-content]:[block-size:0] [&::details-content]:overflow-clip [&::details-content]:[transition:block-size_0.4s_ease,content-visibility_0.4s_allow-discrete] [&[open]::details-content]:[block-size:auto]">
-                    <summary
-                        class="flex cursor-pointer list-none items-center gap-6 py-6 [&::-webkit-details-marker]:hidden">
-                        <span class="flex-1 text-base font-medium group-open:text-[#f47b20] sm:text-lg">
-                            Optigen modifica directament el meu ordinador?
-                        </span>
-                        <span class="text-xl text-[#9da5ae] group-open:hidden">+</span>
-                        <span class="hidden text-xl text-[#f47b20] group-open:inline">×</span>
-                    </summary>
-                    <p class="body-copy pb-6 pr-6">
-                        No. Optigen genera un script personalitzat que pots revisar abans d'executar-lo. Tu mantens el
-                        control sobre els canvis que apliques al teu ordinador.
-                    </p>
-                </details>
+                <div class="faq-cards">
+                    <details name="faq" class="group">
+                        <summary
+                            class="faq-summary">
+                            <span class="faq-number" aria-hidden="true">08</span>
+                            <span class="faq-question">
+                                Optigen modifica directament el meu ordinador?
+                            </span>
+                            <span class="faq-toggle group-open:hidden" aria-hidden="true">+</span>
+                            <span class="faq-toggle hidden group-open:inline" aria-hidden="true">×</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <div class="faq-answer-copy">
+                                <p>
+                                    No. Optigen genera un script personalitzat que pots revisar abans d'executar-lo. Tu mantens el
+                                    control sobre els canvis que apliques al teu ordinador.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
 
-                <details name="faq"
-                    class="group border-t border-[#33404d] [interpolate-size:allow-keywords] [&::details-content]:[block-size:0] [&::details-content]:overflow-clip [&::details-content]:[transition:block-size_0.4s_ease,content-visibility_0.4s_allow-discrete] [&[open]::details-content]:[block-size:auto]">
-                    <summary
-                        class="flex cursor-pointer list-none items-center gap-6 py-6 [&::-webkit-details-marker]:hidden">
-                        <span class="flex-1 text-base font-medium group-open:text-[#f47b20] sm:text-lg">
-                            Necessito instal·lar algun programa?
-                        </span>
-                        <span class="text-xl text-[#9da5ae] group-open:hidden">+</span>
-                        <span class="hidden text-xl text-[#f47b20] group-open:inline">×</span>
-                    </summary>
-                    <p class="body-copy pb-6 pr-6">
-                        No necessites instal·lar cap programa addicional per utilitzar el configurador web. Per executar
-                        els scripts faràs servir les eines corresponents del teu sistema operatiu, com PowerShell o
-                        Bash.
-                    </p>
-                </details>
+                    <details name="faq" class="group">
+                        <summary
+                            class="faq-summary">
+                            <span class="faq-number" aria-hidden="true">09</span>
+                            <span class="faq-question">
+                                Necessito instal·lar algun programa?
+                            </span>
+                            <span class="faq-toggle group-open:hidden" aria-hidden="true">+</span>
+                            <span class="faq-toggle hidden group-open:inline" aria-hidden="true">×</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <div class="faq-answer-copy">
+                                <p>
+                                    No necessites instal·lar cap programa addicional per utilitzar el configurador web. Per executar
+                                    els scripts faràs servir les eines corresponents del teu sistema operatiu, com PowerShell o
+                                    Bash.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
 
-                <details name="faq"
-                    class="group border-y border-[#33404d] [interpolate-size:allow-keywords] [&::details-content]:[block-size:0] [&::details-content]:overflow-clip [&::details-content]:[transition:block-size_0.4s_ease,content-visibility_0.4s_allow-discrete] [&[open]::details-content]:[block-size:auto]">
-                    <summary
-                        class="flex cursor-pointer list-none items-center gap-6 py-6 [&::-webkit-details-marker]:hidden">
-                        <span class="flex-1 text-base font-medium group-open:text-[#f47b20] sm:text-lg">
-                            Què passa si tinc dubtes o problemes?
-                        </span>
-                        <span class="text-xl text-[#9da5ae] group-open:hidden">+</span>
-                        <span class="hidden text-xl text-[#f47b20] group-open:inline">×</span>
-                    </summary>
-                    <p class="body-copy pb-6 pr-6">
-                        Pots consultar la informació disponible a la plataforma per entendre millor el funcionament del
-                        configurador i les optimitzacions. Abans d'executar un script, revisa'n sempre els canvis i els
-                        possibles efectes.
-                    </p>
-                </details>
+                    <details name="faq" class="group">
+                        <summary
+                            class="faq-summary">
+                            <span class="faq-number" aria-hidden="true">10</span>
+                            <span class="faq-question">
+                                Què passa si tinc dubtes o problemes?
+                            </span>
+                            <span class="faq-toggle group-open:hidden" aria-hidden="true">+</span>
+                            <span class="faq-toggle hidden group-open:inline" aria-hidden="true">×</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <div class="faq-answer-copy">
+                                <p>
+                                    Pots consultar la informació disponible a la plataforma per entendre millor el funcionament del
+                                    configurador i les optimitzacions. Abans d'executar un script, revisa'n sempre els canvis i els
+                                    possibles efectes.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
             </div>
         </div>
     </div>
