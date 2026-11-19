@@ -104,7 +104,8 @@ function animateSections() {
 export function initAnimations() {
   if (prefersReducedMotion()) return;
 
-  initSmoothScroll();
+  const lenis = initSmoothScroll();
   animateHero();
   animateSections();
+  return lenis;
 }
