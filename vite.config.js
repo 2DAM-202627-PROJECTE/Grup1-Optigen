@@ -12,6 +12,7 @@ export default defineConfig({
         main: 'index.html',
         indexInici: 'indexInici.html',
         indexFuncionalitats: 'indexFuncionalitats.html',
+        indexFAQ: 'indexFAQ.html',
         indexCookies: 'indexCookies.html',
       },
     },
