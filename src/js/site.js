@@ -1,8 +1,8 @@
-import './style.css';
-import navbarHtml from './components/Navbar.html?raw';
-import footerHtml from './components/Footer.html?raw';
+import '../style.css';
+import navbarHtml from '../components/Navbar.html?raw';
+import footerHtml from '../components/Footer.html?raw';
 import { initAnimations } from './animations.js';
-import { initCookieConsent } from './components/Cookies/Cookies.js';
+import { initCookieConsent } from './Cookies.js';
 import { initForms } from './forms.js';
 
 export function initSite() {
